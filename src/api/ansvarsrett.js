@@ -224,6 +224,9 @@ export default {
           type: 'Textarea',
           heading: 'Beskriv kort arbeidet som firmaet ditt tar ansvar for',
           information: 'Husk at det du beskriver her vil firmaet bli stilt til ansvar for',
+          summary: 'Se eksempler',
+          details:
+            '<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>',
         },
       ],
     },
