@@ -5,14 +5,14 @@ export default {
   },
   schema: [
     {
-      id: 'relation',
+      id: 'page1',
       type: 'Page',
       title: 'Informasjon om firmaet ditt',
       lead:
         '<p>Dersom firmaet ditt har norsk organisasjonsnummer vil informasjon om firmaet ditt hentes fra Brønnøysundregistrene.</p><p>Representerer du et utenlandsk firma, må du fylle inn informasjonen manuelt.</p>',
       children: [
         {
-          property: 'company.type',
+          property: 'companytype',
           type: 'Radio',
           heading: 'Hvem representerer du?',
           suggestedAnswer: [
@@ -29,481 +29,131 @@ export default {
           ],
         },
         {
-          type: 'Branch',
-          branches: [
+          property: 'orgnr',
+          type: 'FetchOrg',
+          heading: 'Organisasjonsnummer',
+          text: 'Eksempel: 123 456 789',
+          placeholder: '987 654 321',
+          source:
+            'https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+',
+          information:
+            'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/">Samordnet registermelding</a> i Altinn før du fortsetter.',
+        },
+        {
+          type: 'Group',
+          heading: 'Kontaktperson for prosjektet',
+          property: 'contactperson',
+          children: [
             {
-              test: { field: 'preferences.love', operator: 'eq', value: 'ja' },
-              children: [
-                {
-                  type: 'Group',
-                  heading: 'Boforhold',
-                  property: 'living.type.group',
-                  text: 'Din bosituasjon kan være avgjørende for hvilken katt du burde ha.',
-                  children: [
-                    {
-                      property: 'living.type',
-                      type: 'Radio',
-                      heading: 'Hvor bor du?',
-                      suggestedAnswer: [
-                        {
-                          type: 'Answer',
-                          text: 'Hybel',
-                          value: 'hybel',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Leilighet',
-                          value: 'leilighet',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Rekkehus',
-                          value: 'rekkehus',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Enebolig',
-                          value: 'enebolig',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Annet (men skal være input)',
-                          value: 'annet',
-                        },
-                      ],
-                    },
-                    {
-                      property: 'living.floor',
-                      type: 'Select',
-                      heading: 'I hvilken etasje bor du?',
-                      text: 'Hvis du bor veldig høyt oppe kan katten falle ned og dø.',
-                      hidden: {
-                        type: 'or',
-                        clauses: [
-                          { field: 'living.type', operator: 'not' },
-                          { field: 'living.type', operator: 'eq', value: 'enebolig' },
-                          { field: 'living.type', operator: 'eq', value: 'rekkehus' },
-                          { field: 'living.type', operator: 'eq', value: 'annet' },
-                        ],
-                      },
-                      suggestedAnswer: [
-                        {
-                          type: 'Answer',
-                          text: '1',
-                          value: '1',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '2',
-                          value: '2',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '3',
-                          value: '3',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '4',
-                          value: '4',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '5',
-                          value: '5',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '6',
-                          value: '6',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '7',
-                          value: '7',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '8',
-                          value: '8',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '9',
-                          value: '9',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '10',
-                          value: '10',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '11',
-                          value: '11',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '12',
-                          value: '12',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '13',
-                          value: '13',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '14',
-                          value: '14',
-                        },
-                        {
-                          type: 'Answer',
-                          text: '15',
-                          value: '15',
-                        },
-                      ],
-                    },
-                    {
-                      property: 'living.contract',
-                      type: 'Radio',
-                      heading: 'Er dyrehold regulert av kontrakten din?',
-                      hidden: {
-                        type: 'or',
-                        clauses: [
-                          { field: 'living.type', operator: 'not' },
-                          { field: 'living.type', operator: 'eq', value: 'enebolig' },
-                          { field: 'living.type', operator: 'eq', value: 'annet' },
-                        ],
-                      },
-                      suggestedAnswer: [
-                        {
-                          type: 'Answer',
-                          text: 'Ja',
-                          value: 'ja',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Nei',
-                          value: 'nei',
-                        },
-                      ],
-                    },
-                    {
-                      property: 'living.animals',
-                      type: 'Radio',
-                      heading: 'Har du lov til å ha katt?',
-                      hidden: {
-                        type: 'or',
-                        clauses: [
-                          { field: 'living.contract', operator: 'not' },
-                          { field: 'living.contract', operator: 'eq', value: 'nei' },
-                        ],
-                      },
-                      suggestedAnswer: [
-                        {
-                          type: 'Answer',
-                          text: 'Ja',
-                          value: 'ja',
-                        },
-                        {
-                          type: 'Answer',
-                          text: 'Nei',
-                          value: 'nei',
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  property: 'living.gone',
-                  type: 'Number',
-                  heading: 'Hvor mange timer er du borte fra hjemmet hver dag?',
-                  placeholder: 'Timer',
-                  minimum: 0,
-                  maximum: 24,
-                  step: 1,
-                },
-                {
-                  property: 'orgnr',
-                  type: 'FetchOrg',
-                  heading: 'Organisasjonsnummer',
-                  text: 'Eksempel: 123 456 789',
-                  placeholder: '987 654 321',
-                  source:
-                    'https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+',
-                  information:
-                    'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/noe">Samordnet registermelding</a> i Altinn før du fortsetter.',
-                },
-                {
-                  property: 'sgregistered',
-                  type: 'FetchSG',
-                  heading: '{name} er registrert med sentral godkjenning for følgende områder',
-                  disabled: { field: 'orgnr.orgid', operator: 'required' },
-                  text:
-                    'Godkjenningen er til {status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
-                  invalidapproval: 'Vi fant ikke godkjenningen din i systemet vårt',
-                  source: 'https://sgregister.dibk.no/api/enterprises/',
-                },
-                {
-                  property: 'preferences.color',
-                  type: 'Radio',
-                  heading: 'Hva er yndlingsfargen din?',
-                  disabled: { field: 'living.gone', operator: 'lt', value: 4 },
-                  suggestedAnswer: [
-                    {
-                      type: 'Answer',
-                      text: 'Brun',
-                      value: 'brun',
-                    },
-                    {
-                      type: 'Answer',
-                      text: 'Svart',
-                      value: 'svart',
-                    },
-                    {
-                      type: 'Answer',
-                      text: 'Hvit',
-                      value: 'hvit',
-                    },
-                  ],
-                },
-              ],
+              property: 'contactperson.name',
+              type: 'Input',
+              heading: 'Navn',
             },
             {
-              test: { field: 'preferences.love', operator: 'neq', value: 'ja' },
-              children: [
-                {
-                  id: 'nocat',
-                  type: 'Result',
-                  title: 'Du kan ikke ha katt 😿',
-                },
-              ],
+              property: 'contactperson.email',
+              type: 'Input',
+              validator: { pattern: '\\S+@\\S+\\.\\S+', error: 'Må være en epost' },
+              heading: 'Epost',
+            },
+            {
+              property: 'contactperson.phone',
+              type: 'Input',
+              heading: 'Telefon',
             },
           ],
+        },
+        {
+          property: 'sgregistered',
+          type: 'FetchSG',
+          heading: '${name} er registrert med sentral godkjenning for følgende områder',
+          disabled: {
+            field: 'orgnr.orgid',
+            operator: 'required',
+          },
+          text:
+            'Godkjenningen er til ${status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
+          invalidapproval: 'Vi fant ikke godkjenningen din i systemet vårt',
+          source: 'https://sgregister.dibk.no/api/enterprises/',
         },
       ],
     },
     {
-      id: 'features',
+      id: 'page2',
       type: 'Page',
-      title: 'Kattens egenskaper',
+      title: 'Har firmaet rett kompetanse til å gjøre jobben?',
       lead:
-        'Spørsmålene på denne siden er kanskje vanskelige å svare på hvis du ikke har vært så mye sammen med katter før. Det skjønner vi. Men katter er like forskjellige som deg og meg! Prøv å se for deg livet med en fin katt.',
+        '<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tllegg til å ha minst 2 års relevant arbeidserfaring.</p>',
       children: [
         {
           type: 'Group',
-          heading: 'Katt og kos',
-          text:
-            'Noen katter hater kos. Noen katter liker å kose litt. Andre katter liker å kose veldig mye. Hva liker du?',
+          heading:
+            'Hvilken utdanning og praksis, som er nyttig for jobben som nå skal gjøres, har faglig leder i firma?',
+          property: 'competence',
           children: [
             {
-              property: 'cuddle.hours',
-              type: 'Number',
-              heading: 'Hvor mange timer kan du kose med katten hver dag?',
-              placeholder: 'Timer',
-              minimum: 0,
-              maximum: 24,
-              step: 1,
+              property: 'competence.education',
+              type: 'Select',
+              heading: 'Utdanningsnivå',
+              defaultOption: 'Velg utdanningsnivå',
               text:
-                'Husk å beregne tid til å spise og sove for både deg og katten! <a href="/somewhere">Les mer om mat</a>',
-            },
-            {
-              property: 'cuddle.image',
-              type: 'Image',
-              text:
-                'Noen ganger er det kanskje behov for et bilde for å demonstrere. Det er det egentlig ikke her.',
-              image: {
-                url: 'http://www.snugglebugs.dk/images/fig1.jpg',
-                alt: 'alt for image',
-              },
-            },
-            {
-              property: 'cuddle.fur',
-              type: 'Radio',
-              heading: 'Hva slags pels liker du å kose med?',
+                '<a href="https://dibk.no/byggeregler/sak/3/11/11-2/ ">Les mer om utdanningsnivåer</a> i byggesaksforskriften',
               suggestedAnswer: [
                 {
                   type: 'Answer',
-                  text: 'Langhåret',
-                  value: 'langharet',
+                  text: 'Fag- eller svenneprøve',
+                  value: 'a',
                 },
                 {
                   type: 'Answer',
-                  text: 'Korthåret',
-                  value: 'kortharet',
+                  text: 'Mesterbrev eller fagskole',
+                  value: 'b',
+                },
+                {
+                  type: 'Answer',
+                  text: 'Utdanning på høgskolenivå',
+                  value: 'c',
+                },
+                {
+                  type: 'Answer',
+                  text: 'Utdanning på universitetsnivå',
+                  value: 'd',
                 },
               ],
             },
-          ],
-        },
-        {
-          property: 'preferences.predator',
-          type: 'Checkbox',
-          heading: 'Trenger du en katt som kan fange ekle dyr i huset ditt?',
-          suggestedAnswer: [
             {
-              type: 'Answer',
-              text: 'Edderkopp',
-              value: 'edderkopp',
+              property: 'competence.experience',
+              type: 'Input',
+              text:
+                '<a href="https://dibk.no/byggeregler/sak/3/11/11-4/ ">Les mer om krav til praksis</a> i byggesaksforskriften',
+              heading: 'År med relevant erfaring',
             },
             {
-              type: 'Answer',
-              text: 'Mus',
-              value: 'mus',
-              // hidden: { field: 'preferences.predator.edderkopp', operator: 'eq', value: true },
-              disabled: { field: 'preferences.predator.edderkopp', operator: 'neq', value: true },
-            },
-            {
-              type: 'Answer',
-              text: 'Fluer',
-              value: 'fluer',
-            },
-            {
-              type: 'Answer',
-              text: 'Rotter',
-              value: 'rotter',
+              property: 'contactperson.phone',
+              type: 'Image',
+              heading: 'Hvilken jobb kan du gjøre?',
+              text: 'Utdannings- og erfaringsnivået avgjør hvilken jobb firmaet ditt kan gjøre',
+              image: {
+                url: '/images/matrix.png',
+                alt: 'alt for image',
+              },
             },
           ],
-        },
-      ],
-    },
-    {
-      id: 'optimalcat',
-      type: 'Page',
-      title: 'Din optimale katt',
-      lead:
-        'Katter finnes i mange forskjellige farger, størrelser og sinnelag. Her kan du beskrive din optimale katt i størst mulig detalj. Vi skjønner at du er ivrig, men helst ikke skriv så mye at vi ikke gidder å lese det.',
-      children: [
-        {
-          property: 'optimal.cat',
-          type: 'Textarea',
-          heading: 'Beskriv din optimale katt',
-          text: 'Eksempel: En katt som liker å kose, men ikke for mye.',
-        },
-        {
-          property: 'cat.image',
-          type: 'Image',
-          text: 'Er det denne katten?',
-          image: {
-            url: 'http://www.pngmart.com/files/1/Cat-Jump-PNG.png',
-            alt: 'alt for image',
-          },
-        },
-        {
-          property: 'example.cats',
-          type: 'Radio',
-          heading: 'Hvilken av disse kattene foretrekker du?',
-          text:
-            '<a href="https://no.wikipedia.org/wiki/Kattefamilien" target="_blank">Les mer om katter</a>',
-          suggestedAnswer: [
-            {
-              type: 'Answer',
-              heading: 'Kjempesøt babykatt',
-              text:
-                'Denne katten er så liten at du kan ha den i lomma. Den er også kjempesøt og kjempeuskyldig. Det kan hende den bæsjer i senga di. Ingen vet hvor stor den blir, eller om den noensinne blir voksen.',
-              image: {
-                url:
-                  'https://i.pinimg.com/736x/ba/03/23/ba03237a6d6499f0e2633314826e1526--cutest-animals-baby-animals.jpg',
-                alt: 'alt for image',
-              },
-              value: 'katt1',
-            },
-            {
-              type: 'Answer',
-              heading: 'Pølsekatt',
-              text:
-                'Dette er en veldig sjelden katt. Bare 1 av 8000 katter er pølsekatter. De krever ekstra mye kos og omsorg fordi de blir tvunget til å ha på seg den teite drakta. Det er en stor forpliktelse å få en slik katt.',
-              image: {
-                url:
-                  'https://i.pinimg.com/736x/ae/51/9e/ae519e2800991519b1041a539747e0d4--food-costumes-costume-ideas.jpg',
-                alt: 'alt for image',
-              },
-              value: 'katt2',
-            },
-            {
-              type: 'Answer',
-              heading: 'Veldig smart katt',
-              text:
-                'Denne katten står bak hele denne veiviseren. Det er den smarteste katten i verden. Neida, vi bare tuller, katter kan jo ikke lage nettsider. Ennå, iallfall.',
-              image: {
-                url:
-                  'http://r.fod4.com/c=sq/s=w350,pd1/o=80/http://a.fod4.com/images/user_photos/1356209/afb26342d1d2f37ff156724ed9eaa822_square_fullsize.',
-                alt: 'alt for image',
-              },
-              value: 'katt3',
-            },
-            {
-              type: 'Answer',
-              heading: 'Sint katt',
-              text:
-                'Dette er en veldig sint katt som hater alt. Den vil ikke kose, aller minst med deg. Du får definitivt være i fred hvis du skaffer deg denne katten.',
-              image: {
-                url:
-                  'https://us.123rf.com/450wm/isselee/isselee1006/isselee100601392/7121151-close-up-di-chihuahua-arrabbiato-ringhio-2-anni-di-et--davanti-a-sfondo-bianco.jpg?ver=6',
-                alt: 'alt for image',
-              },
-              value: 'katt4',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'testtypes',
-      type: 'Page',
-      title: 'Denne siden er for å teste alle de nye sidene',
-      lead: 'Ja denne siden har bare de nye typene vi trenger',
-      children: [
-        {
-          property: 'favourite.actor',
-          type: 'Input',
-          validator: { pattern: '^\\d+(,\\d+)?$', error: 'Oppgi på formatet 123,1239' },
-          heading: 'Hvem er din favorittskuespiller?',
-          text: 'Input burde kanskje ikke ha brødtekst som skiller spørsmål fra inputfelt?',
-          placeholder: 'Kit Harington',
-        },
-        {
-          property: 'behavior.with.animals',
-          type: 'Textarea',
-          heading: 'Skriv litt om hvordan du er med dyr',
-          placeholder: 'Hvordan oppfører du deg rundt dyr',
-          image: {
-            url: 'https://media.giphy.com/media/13f5iwTRuiEjjW/giphy.gif',
-            alt: 'alt for image',
-            text: 'Bildetekst her òg?',
-          },
-        },
-        {
-          property: 'cat.information',
-          type: 'Text',
-          heading: 'Et lite notis med tekst',
-          text:
-            'Kanskje man trenger å ha litt mer tekst innimellom, som ikke hører til et konkret felt. Det er greit det altså. Cat ipsum dolor sit amet, always hungry man running from cops stops to <a href="somewhere">pet cats</a>, goes to jail step on your keyboard while you\'re gaming and then turn in a circle . Pose purrfectly to show my beauty woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean. Lick butt, next to <a href="somewhere">human slave food dispenser</a>.',
-        },
-        {
-          property: 'cat.image',
-          type: 'Image',
-          text: 'Dette er en bildeblokk',
-          image: {
-            url: 'https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif',
-            alt: 'alt for image',
-          },
         },
         {
           property: 'tiltaksklasse',
           type: 'Radio',
           heading: 'Hvilken tiltaksklasse er jobben?',
-          text: '<a href="/somewhere">Les mer om tiltaksklasser</a>',
+          text:
+            '<a href="https://dibk.no/byggeregler/sak/3/9/9-4/">Les mer om tiltaksklasser</a> i byggesaksforskriften',
           suggestedAnswer: [
             {
               type: 'Answer',
               heading: 'Tiltaksklasse 1',
               text:
-                'Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3. ',
+                'Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3.',
               image: {
-                url: 'https://media.giphy.com/media/l0MYNYaAeaQwtlOta/giphy.gif',
-                alt: 'alt for image',
+                url: '/images/skog.jpg',
+                alt: '',
               },
               value: 'tiltaksklasse1',
             },
@@ -513,8 +163,8 @@ export default {
               text:
                 'Typiske bygninger i tiltaksklasse 2 er boligblokker og kontorbygg på 3-4 etasjer. Deler av utførelsen av større bygninger inntil 5 etasjer kan også være tiltaksklasse 2. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 3.',
               image: {
-                url: 'https://media.giphy.com/media/3o6Ztrs0GnTt4GkFO0/giphy.gif',
-                alt: 'alt for image',
+                url: '/images/bygg.jpg',
+                alt: '',
               },
               value: 'tiltaksklasse2',
             },
@@ -522,61 +172,58 @@ export default {
               type: 'Answer',
               heading: 'Tiltaksklasse 3',
               text:
-                'Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig',
+                'Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig.',
               image: {
-                url: 'https://media.giphy.com/media/5xtDarqCp0eomZaFJW8/giphy.gif',
-                alt: 'alt for image',
+                url: '/images/sykehus.jpg',
+                alt: '',
               },
               value: 'tiltaksklasse3',
-              disabled: { field: 'samsvar.sende.1', operator: 'eq', value: true },
             },
           ],
         },
         {
-          property: 'samsvar.sende',
-          type: 'Checkbox',
-          heading: 'Hvilken samsvarserklæring skal du sende?',
+          property: 'function',
+          type: 'Radio',
+          heading: 'Hvilken funksjon har firmaet ditt i prosjektet??',
+          text:
+            '<a href="https://dibk.no/byggeregler/sak/3/12/innledning/">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften',
           suggestedAnswer: [
             {
               type: 'Answer',
-              heading: '1 Rammetillatelse',
-              text:
-                'Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre.',
-              value: '1',
-              image: {
-                url: 'https://media.giphy.com/media/etSwiUkXNhTB6/giphy.gif',
-                alt: 'some alt',
-              },
+              heading: 'Ansvarlig søker (SØK)',
+              value: 'sok',
             },
             {
               type: 'Answer',
-              heading: '2 Igangsettelse',
-              text:
-                'Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: '2',
-              image: {
-                url: 'https://media.giphy.com/media/2F5modVJ5dE9G/giphy.gif',
-                alt: 'some image alt',
-              },
+              heading: 'Ansvarlig prosjekterende (PRO)',
+              value: 'pro',
             },
             {
               type: 'Answer',
-              heading: '2 Igangsettelse no image',
-              text:
-                'Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: '3',
+              heading: 'Ansvarlig utførende (UTF)',
+              value: 'utf',
             },
             {
               type: 'Answer',
-              text:
-                'no heading Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
-              value: '4',
-              image: {
-                url: 'https://media.giphy.com/media/t8dPLNzwF5HMc/giphy.gif',
-                alt: 'some image alt',
-              },
+              heading: 'Ansvarlig kontrollerende (KPR)',
+              value: 'krp',
             },
           ],
+        },
+      ],
+    },
+    {
+      id: 'responsibility',
+      type: 'Page',
+      title: 'Hva skal firmaet ta ansvar for?',
+      lead:
+        'Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ',
+      children: [
+        {
+          property: 'responsibility.description',
+          type: 'Textarea',
+          heading: 'Beskriv kort arbeidet som firmaet ditt tar ansvar for',
+          information: 'Husk at det du beskriver her vil firmaet bli stilt til ansvar for',
         },
       ],
     },

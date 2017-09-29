@@ -23,8 +23,7 @@ export default function Intro({ close }) {
           gjennomfører denne veiviseren.
         </Primitives.Paragraphs.P>
         <Primitives.Figure>
-          <img src="/image.jpg" alt="katter er fine" />
-          <figcaption>Bildetekst kanskje?</figcaption>
+          <img src="/image.jpg" alt="" />
         </Primitives.Figure>
         <Primitives.Heading.H2 small>Før du begynner må du vite:</Primitives.Heading.H2>
         <ol>
