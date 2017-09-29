@@ -228,11 +228,114 @@ export default {
       ],
     },
     {
+      id: 'declarationofconformity',
+      type: 'Page',
+      title: 'Hva skal firmaet ta ansvar for?',
+      lead:
+        '<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktsk er det!</p><p><a href="https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1">Les mer om samsvarserklæring i regelverket</a><p>',
+      children: [
+        {
+          property: 'conformity.type',
+          type: 'Checkbox',
+          heading: 'Hvilken samsvarserklæring skal du sende?',
+          suggestedAnswer: [
+            {
+              type: 'Answer',
+              heading: '1 Rammetillatelse',
+              text:
+                'Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre.',
+              value: '1',
+              image: {
+                url: '/images/notes.jpg',
+                alt: '',
+              },
+            },
+            {
+              type: 'Answer',
+              heading: '2 Igangsettelse',
+              text:
+                'Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!',
+              value: '2',
+              image: {
+                url: '/images/person.jpg',
+                alt: '',
+              },
+            },
+            {
+              type: 'Answer',
+              heading: '3 Midlertidig brukstillatelse',
+              text:
+                'Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk.',
+              value: '3',
+              image: {
+                url: '/images/pen.jpg',
+                alt: '',
+              },
+            },
+            {
+              type: 'Answer',
+              heading: '4 Ferdigattest',
+              text:
+                'Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”',
+              value: '4',
+              image: {
+                url: '/images/nail.jpg',
+                alt: '',
+              },
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'responsible',
+      type: 'Page',
+      title: 'Hvor er byggeplassen og hvem er ansvarlig søker?',
+      lead:
+        'Du må fylle ut denne informasjonen slik at det blir enkelt for ansvarlig søker og kommunen å knytte erklæringen til riktig byggesak.',
+      children: [
+        {
+          property: 'responsiblefirm',
+          type: 'Input',
+          heading: 'Hvilket firma er ansvarlig søker?',
+        },
+        {
+          type: 'Group',
+          heading: 'Hvor skal arbeidet gjøres?',
+          property: 'where',
+          children: [
+            {
+              property: 'where.municipality',
+              type: 'Input',
+              heading: 'Kommune',
+            },
+            {
+              property: 'where.section',
+              type: 'Input',
+              heading: 'Gårdsnummer',
+            },
+            {
+              property: 'where.number',
+              type: 'Input',
+              heading: 'Bruksnummer',
+            },
+
+            {
+              property: 'where.address',
+              type: 'Input',
+              heading: 'Gateadresse',
+              text: 'Fylles ut hvis eiendommen har gateadresse',
+            },
+          ],
+        },
+      ],
+    },
+    {
       id: 'hooray',
       type: 'Result',
-      title: 'Hurra - du kan ha katt 🌈',
+      title: 'Se over og fullfør',
       lead:
-        'Les nøye gjennom svarene dine, og sjekk at alt stemmer før du tar med deg resultatene til ditt nærmeste adopsjonssenter for katter. Husk at du vil bli stilt til ansvar for at katten får det bra hos deg!',
+        '<p>Les nøye gjennom erklæringen før du fortsetter.</p><p>Når du trykker fullfør vil du motta erklæringen på epost. Den må du skrive ut, signere og sende videre til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>',
       exporter: 'dataExport',
     },
   ],
