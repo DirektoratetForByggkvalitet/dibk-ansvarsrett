@@ -2,7 +2,7 @@
 
 ## Development
 
-You need to link netliferesearch/losen to run this project locally. Head over to you clone of that repo in the terminal and type `yarn link`.
+You need to link [netliferesearch/losen](https://github.com/netliferesearch/losen) to run this project locally. Head over to you clone of that repo in the terminal and type `yarn link`.
 
 Head back to this repo in you terminal and type `yarn link losen`.
 
