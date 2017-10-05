@@ -38,6 +38,12 @@ export default {
             'https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+',
           information:
             'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/">Samordnet registermelding</a> i Altinn før du fortsetter.',
+          fetchSG: true,
+          SGheading: '${name} er registrert med sentral godkjenning for følgende områder',
+          SGtext:
+            'Godkjenningen er til ${status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
+          invalidapproval: 'Vi fant ikke godkjenningen din i systemet vårt',
+          SGsource: 'https://sgregister.dibk.no/api/enterprises/',
         },
         {
           type: 'Group',
@@ -61,19 +67,6 @@ export default {
               heading: 'Telefon',
             },
           ],
-        },
-        {
-          property: 'sgregistered',
-          type: 'FetchSG',
-          heading: '${name} er registrert med sentral godkjenning for følgende områder',
-          disabled: {
-            field: 'orgnr.orgid',
-            operator: 'required',
-          },
-          text:
-            'Godkjenningen er til ${status.approval_period_to} og viser hvilke fagområder firmaet har kompetanse på. Du kan likevel erklære ansvar for ansvarsområder som ligger utenfor den sentrale godkjenningen hvis firmaet ditt har nødvendig kunnskap og erfaring fra også det området.',
-          invalidapproval: 'Vi fant ikke godkjenningen din i systemet vårt',
-          source: 'https://sgregister.dibk.no/api/enterprises/',
         },
       ],
     },
