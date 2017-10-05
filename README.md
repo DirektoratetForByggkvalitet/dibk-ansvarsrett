@@ -1,4 +1,4 @@
-# [dibk-ansvarsrett](https://dibk-ansvarsrett.firebaseapp.com/)
+# [dibk-ansvarsrett](https://dibk-ansvarsrett.firebaseapp.com/) [![Build Status](https://travis-ci.com/netliferesearch/dibk-ansvarsrett.svg?token=7NpjNJdFW93Qs1rPvcce&branch=master)](https://travis-ci.com/netliferesearch/dibk-ansvarsrett)
 
 ## Development
 
