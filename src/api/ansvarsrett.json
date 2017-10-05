@@ -7,7 +7,7 @@
     {
       "id": "page1",
       "type": "Page",
-      "title": "Informasjon om firmaet ditt",
+      "heading": "Informasjon om firmaet ditt",
       "lead":
         "<p>Dersom firmaet ditt har norsk organisasjonsnummer vil informasjon om firmaet ditt hentes fra Brønnøysundregistrene.</p><p>Representerer du et utenlandsk firma, må du fylle inn informasjonen manuelt.</p>",
       "children": [
@@ -76,7 +76,7 @@
     {
       "id": "page2",
       "type": "Page",
-      "title": "Har firmaet rett kompetanse til å gjøre jobben?",
+      "heading": "Har firmaet rett kompetanse til å gjøre jobben?",
       "lead":
         "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tllegg til å ha minst 2 års relevant arbeidserfaring.</p>",
       "children": [
@@ -211,7 +211,7 @@
     {
       "id": "responsibility",
       "type": "Page",
-      "title": "Hva skal firmaet ta ansvar for?",
+      "heading": "Hva skal firmaet ta ansvar for?",
       "lead":
         "Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ",
       "children": [
@@ -229,7 +229,7 @@
     {
       "id": "declarationofconformity",
       "type": "Page",
-      "title": "Hva skal firmaet ta ansvar for?",
+      "heading": "Hva skal firmaet ta ansvar for?",
       "lead":
         "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktsk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
       "children": [
@@ -289,7 +289,7 @@
     {
       "id": "responsible",
       "type": "Page",
-      "title": "Hvor er byggeplassen og hvem er ansvarlig søker?",
+      "heading": "Hvor er byggeplassen og hvem er ansvarlig søker?",
       "lead":
         "Du må fylle ut denne informasjonen slik at det blir enkelt for ansvarlig søker og kommunen å knytte erklæringen til riktig byggesak.",
       "children": [
@@ -331,7 +331,7 @@
     {
       "id": "hooray",
       "type": "Result",
-      "title": "Se over og fullfør",
+      "heading": "Se over og fullfør",
       "lead":
         "<p>Les nøye gjennom erklæringen før du fortsetter.</p><p>Når du trykker fullfør vil du motta erklæringen på epost. Den må du skrive ut, signere og sende videre til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>",
       "exporter": "dataExport"
