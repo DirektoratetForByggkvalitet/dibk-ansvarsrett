@@ -334,21 +334,7 @@
       "title": "Se over og fullfør",
       "lead":
         "<p>Les nøye gjennom erklæringen før du fortsetter.</p><p>Når du trykker fullfør vil du motta erklæringen på epost. Den må du skrive ut, signere og sende videre til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>",
-      "exporter": "dataExport",
-      "children": [
-        {
-          "property": "independent",
-          "type": "Checkbox",
-          "suggestedAnswer": [
-            {
-              "type": "Answer",
-              "text":
-                "Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5",
-              "value": "true"
-            }
-          ]
-        }
-      ]
+      "exporter": "dataExport"
     }
   ]
 }
