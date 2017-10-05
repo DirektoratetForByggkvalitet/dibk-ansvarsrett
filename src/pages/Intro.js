@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Primitives } from 'dibk-wizard-framework';
+import { Primitives } from 'losen';
 import { IntroMain } from '../primitives/IntroMain';
 
 export default function Intro({ close }) {
@@ -40,7 +40,9 @@ export default function Intro({ close }) {
           erklæring tilsendt på e-post, slik at du kan signere den og sende den videre til ansvarlig
           søker.
         </Primitives.Paragraphs.P>
-        <Primitives.Button onClick={() => close()}>Start veiviseren</Primitives.Button>
+        <Primitives.Button.MainButton onClick={() => close()}>
+          Start veiviseren
+        </Primitives.Button.MainButton>
       </IntroMain>
     </Primitives.Wizard>
   );

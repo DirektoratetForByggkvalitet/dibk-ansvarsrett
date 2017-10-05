@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "dibk-wizard-framework": "netliferesearch/dibk-wizard-framework",
+    "losen": "netliferesearch/losen",
     "lodash.get": "^4.4.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -22,7 +22,7 @@
     "lint:js": "eslint . --ext .jsx,.js --ignore-pattern build",
     "deploy": "npm run build && firebase deploy",
     "eject": "react-scripts eject",
-    "validate": "dibk-wizard-framework validate src/api/ansvarsrett.js"
+    "validate": "losen validate src/api/ansvarsrett.js"
   },
   "devDependencies": {
     "eslint": "^4.7.2",
