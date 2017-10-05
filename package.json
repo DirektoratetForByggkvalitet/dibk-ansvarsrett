@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "losen": "netliferesearch/losen",
+    "losen": "*",
     "lodash.get": "^4.4.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
