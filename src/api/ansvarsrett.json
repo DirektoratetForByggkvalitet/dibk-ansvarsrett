@@ -32,7 +32,7 @@
           "property": "orgnr",
           "type": "FetchOrg",
           "heading": "Organisasjonsnummer",
-          "text": "Eksempel: 123 456 789",
+          "text": "Eksempel: 992 294 035",
           "placeholder": "987 654 321",
           "source":
             "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
