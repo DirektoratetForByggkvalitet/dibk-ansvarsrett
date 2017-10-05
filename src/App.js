@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import { Wizard, StyleProvider } from 'losen';
 import store from './store';
-import cat from './api/ansvarsrett';
+import data from './api/ansvarsrett.json';
 import Intro from './pages/Intro';
 
 import dataExport from './exports/data-export';
@@ -34,7 +34,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard wizard={cat} exports={{ dataExport }} />
+        <Wizard wizard={data} exports={{ dataExport }} />
       </Provider>
     );
   }
