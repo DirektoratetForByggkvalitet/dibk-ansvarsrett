@@ -246,7 +246,7 @@
               "value": "1",
               "image": {
                 "url": "/images/notes.jpg",
-                "alt": ""
+                "alt": "Rammetillatelse"
               }
             },
             {
@@ -257,7 +257,7 @@
               "value": "2",
               "image": {
                 "url": "/images/person.jpg",
-                "alt": ""
+                "alt": "Igangsettelse"
               }
             },
             {
@@ -268,7 +268,7 @@
               "value": "3",
               "image": {
                 "url": "/images/pen.jpg",
-                "alt": ""
+                "alt": "Midlertidig brukstillatelse"
               }
             },
             {
@@ -279,7 +279,7 @@
               "value": "4",
               "image": {
                 "url": "/images/nail.jpg",
-                "alt": ""
+                "alt": "Ferdigattest"
               }
             }
           ]
