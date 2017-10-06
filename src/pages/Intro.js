@@ -7,9 +7,6 @@ export default function Intro({ close }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
-        <header className="temp">
-          (her kommer det såklart en header lik den i selve veiviseren)
-        </header>
         <Primitives.Heading.H1>Finn ut om du kan erklære ansvar!</Primitives.Heading.H1>
         <Primitives.Paragraphs.P>
           Dette er en veiviser for deg som vil finne ut om firmaet ditt er kvalifisert til å erklære

@@ -4,20 +4,50 @@ export const IntroMain = styled.main`
   margin: 0 auto;
   max-width: 1000px;
   padding: 75px 20px 200px;
-  button {
-    display: block;
-    &::before,
-    &::after {
-      display: none !important;
+  line-height: 1.6;
+  h1 {
+    line-height: 1.2;
+    &::before {
+      content: "Veiviser";
+      display: block;
+      color: gray;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 300;
+      font-size: 20px;
     }
   }
   figure {
     float: right;
     max-width: 300px;
   }
-  ol,
-  p {
+  ol, p {
     margin-bottom: 40px;
+  }
+  ol {
+    list-style: none;
+    margin: 1.8em 0 3em 4em;
+    padding: 0;
+  }
+  ol li {
+    counter-increment: step;
+    position: relative;
+    margin-bottom: 1.6em;
+    &::before {
+      content: counter(step);
+      color: white;
+      background: black;
+      border-radius: 50%;
+      height: 1.8em;
+      width: 1.8em;
+      margin-left: -2.5em;
+      position: absolute;
+      vertical-align: middle;
+      display: inline-block;
+      text-align: center;
+      line-height: 1.8;
+      font-weight: bold;
+    }
   }
   header.temp {
     position: absolute;
