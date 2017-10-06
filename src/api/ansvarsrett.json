@@ -18,11 +18,13 @@
           "heading": "Hvem representerer du?",
           "options": [
             {
+              "id": "companytype.norwegian",
               "type": "Answer",
               "text": "Et norsk firma",
               "value": "norwegian"
             },
             {
+              "id": "companytype.foreign",
               "type": "Answer",
               "text": "Et utenlands firma",
               "value": "foreign"
@@ -30,6 +32,7 @@
           ]
         },
         {
+          "id": "orgNr",
           "property": "orgnr",
           "type": "FetchOrg",
           "heading": "Organisasjonsnummer",
@@ -47,17 +50,20 @@
           "SGsource": "https://sgregister.dibk.no/api/enterprises/"
         },
         {
+          "id": "contactperson",
           "type": "Group",
           "simple": true,
           "heading": "Kontaktperson for prosjektet",
           "property": "contactperson",
           "children": [
             {
+              "id": "contactperson.name",
               "property": "contactperson.name",
               "type": "Input",
               "heading": "Navn"
             },
             {
+              "id": "contactperson.email",
               "property": "contactperson.email",
               "type": "Input",
               "validator": {
@@ -67,6 +73,7 @@
               "heading": "Epost"
             },
             {
+              "id": "contactperson.phone",
               "property": "contactperson.phone",
               "type": "Input",
               "heading": "Telefon"
@@ -83,6 +90,7 @@
         "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tllegg til å ha minst 2 års relevant arbeidserfaring.</p>",
       "children": [
         {
+          "id": "competence",
           "type": "Group",
           "simple": true,
           "heading":
@@ -90,6 +98,7 @@
           "property": "competence",
           "children": [
             {
+              "id": "competence.education",
               "property": "competence.education",
               "type": "Select",
               "heading": "Utdanningsnivå",
@@ -98,21 +107,25 @@
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften",
               "options": [
                 {
+                  "id": "competence.education.fagsvenneprove",
                   "type": "Answer",
                   "text": "Fag- eller svenneprøve",
                   "value": "fag- eller svenneprøve"
                 },
                 {
+                  "id": "competence.education.mesterellerfagskole",
                   "type": "Answer",
                   "text": "Mesterbrev eller fagskole",
                   "value": "mesterbrev eller fagskole"
                 },
                 {
+                  "id": "competence.education.hogskole",
                   "type": "Answer",
                   "text": "Utdanning på høgskolenivå",
                   "value": "høgskole"
                 },
                 {
+                  "id": "competence.education.universitet",
                   "type": "Answer",
                   "text": "Utdanning på universitetsnivå",
                   "value": "universitet"
@@ -120,6 +133,7 @@
               ]
             },
             {
+              "id": "competence.experience",
               "property": "competence.experience",
               "type": "Number",
               "text":
@@ -127,17 +141,20 @@
               "heading": "År med relevant erfaring"
             },
             {
+              "id": "possibleRoles",
               "heading": "Hvilken jobb kan du gjøre?",
               "text": "Utdannings- og erfaringsnivået avgjør hvilken jobb firmaet ditt kan gjøre",
               "type": "Table",
               "cells": [
                 [
                   {
+                    "id": "possibleRoles.function",
                     "type": "Heading",
                     "rowSpan": 2,
                     "text": "FUNKSJON"
                   },
                   {
+                    "id": "possibleRoles.class",
                     "type": "Heading",
                     "colSpan": 3,
                     "text": "TILTAKSKLASSE"
@@ -145,24 +162,29 @@
                 ],
                 [
                   {
+                    "id": "possibleRoles.class.1",
                     "type": "Heading",
                     "text": "Tiltaksklasse 1"
                   },
                   {
+                    "id": "possibleRoles.class.2",
                     "type": "Heading",
                     "text": "Tiltaksklasse 2"
                   },
                   {
+                    "id": "possibleRoles.class.3",
                     "type": "Heading",
                     "text": "Tiltaksklasse 3"
                   }
                 ],
                 [
                   {
+                    "id": "possibleRoles.applicant",
                     "type": "Heading",
                     "text": "Ansvarlig søker"
                   },
                   {
+                    "id": "possibleRoles.table.1+applicant",
                     "type": "Cell",
                     "rowSpan": 2,
                     "text": "Mesterbrev/fagskole<br/>+ 4 års erfaring",
@@ -198,6 +220,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.2+applicant",
                     "type": "Cell",
                     "text": "Mesterbrev/fagskole<br/>+ 6 års erfaring",
                     "test": {
@@ -232,6 +255,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.3+applicant",
                     "type": "Cell",
                     "rowSpan": 2,
                     "text": "Universitetsnivå<br/>+ 8 års erfaring",
@@ -254,10 +278,12 @@
                 ],
                 [
                   {
+                    "id": "possibleRoles.table.projecting",
                     "type": "Heading",
                     "text": "Prosjekterende"
                   },
                   {
+                    "id": "possibleRoles.table.1+projecting",
                     "type": "Cell",
                     "text": "Høgskolenivå<br/>+ 6 års erfaring",
                     "test": {
@@ -289,10 +315,12 @@
                 ],
                 [
                   {
+                    "id": "possibleRoles.table.performing",
                     "type": "Heading",
                     "text": "Utførende"
                   },
                   {
+                    "id": "possibleRoles.table.1+performing",
                     "type": "Cell",
                     "text": "Fag-/svenneprøve<br/>+ 2 års erfaring",
                     "test": {
@@ -311,6 +339,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.2+performing",
                     "type": "Cell",
                     "text": "Mestebrev-/fagskole<br/>+ 3 års erfaring",
                     "test": {
@@ -345,6 +374,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.3+performing",
                     "type": "Cell",
                     "text": "Høgskolenivå<br/>+ 5 års erfaring",
                     "test": {
@@ -376,10 +406,12 @@
                 ],
                 [
                   {
+                    "id": "possibleRoles.table.controlling",
                     "type": "Heading",
                     "text": "Kontrollerende"
                   },
                   {
+                    "id": "possibleRoles.table.1+controlling",
                     "type": "Cell",
                     "text": "Mestebrev-/fagskole<br/>+ 4 års erfaring",
                     "test": {
@@ -414,6 +446,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.2+controlling",
                     "type": "Cell",
                     "text": "Høgskolenivå<br/>+ 6 års erfaring",
                     "test": {
@@ -443,6 +476,7 @@
                     }
                   },
                   {
+                    "id": "possibleRoles.table.3+controlling",
                     "type": "Cell",
                     "text": "Universitetsnivå<br/>+ 8 års erfaring",
                     "test": {
@@ -467,6 +501,7 @@
           ]
         },
         {
+          "id": "class",
           "property": "tiltaksklasse",
           "type": "Radio",
           "heading": "Hvilken tiltaksklasse er jobben?",
@@ -474,6 +509,7 @@
             "<a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser</a> i byggesaksforskriften",
           "options": [
             {
+              "id": "class.1",
               "type": "Answer",
               "heading": "Tiltaksklasse 1",
               "text":
@@ -482,9 +518,46 @@
                 "url": "/images/skog.jpg",
                 "alt": "Lite hus"
               },
-              "value": "tiltaksklasse1"
+              "value": "tiltaksklasse1",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "competence.education",
+                        "operator": "required"
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "gte",
+                        "value": 2
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever fag-/svenneprøve og minst to års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "field": "competence.education",
+                        "operator": "required"
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "required"
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
+              "id": "class.2",
               "type": "Answer",
               "heading": "Tiltaksklasse 2",
               "text":
@@ -493,9 +566,62 @@
                 "url": "/images/bygg.jpg",
                 "alt": "Større hus"
               },
-              "value": "tiltaksklasse2"
+              "value": "tiltaksklasse2",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "mesterbrev eller fagskole"
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "høgskole"
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "universitet"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "gte",
+                        "value": 3
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst tre års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "field": "competence.education",
+                        "operator": "required"
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "required"
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
+              "id": "class.3",
               "type": "Answer",
               "heading": "Tiltaksklasse 3",
               "text":
@@ -504,11 +630,59 @@
                 "url": "/images/sykehus.jpg",
                 "alt": "Størst hus"
               },
-              "value": "tiltaksklasse3"
+              "value": "tiltaksklasse3",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "høgskole"
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "universitet"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "gte",
+                        "value": 5
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever høgskole og minst fem års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "field": "competence.education",
+                        "operator": "required"
+                      },
+                      {
+                        "field": "competence.experience",
+                        "operator": "required"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         },
         {
+          "id": "function",
           "property": "function",
           "type": "Radio",
           "heading": "Hvilken funksjon har firmaet ditt i prosjektet??",
@@ -516,24 +690,736 @@
             "<a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften",
           "options": [
             {
+              "id": "function.sok",
               "type": "Answer",
               "heading": "Ansvarlig søker (SØK)",
-              "value": "sok"
+              "value": "sok",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse1"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 4
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "mesterbrev eller fagskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse2"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 6
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "mesterbrev eller fagskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse3"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 8
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "universitet"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst fire års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst seks års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever universitetsnivå og minst åtte års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
+              "id": "function.pro",
               "type": "Answer",
               "heading": "Ansvarlig prosjekterende (PRO)",
-              "value": "pro"
+              "value": "pro",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse1"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 4
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "mesterbrev eller fagskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse2"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 6
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse3"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 8
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "universitet"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst fire års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever høgskolenivå og minst seks års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever universitetsnivå og minst åtte års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
+              "id": "function.utf",
               "type": "Answer",
               "heading": "Ansvarlig utførende (UTF)",
-              "value": "utf"
+              "value": "utf",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse1"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 2
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse2"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 3
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "mesterbrev eller fagskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse3"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 5
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever fag-/svenneprøve og minst to års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst tre års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever høgskolenivå og minst fem års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             },
             {
+              "id": "function.krp",
               "type": "Answer",
               "heading": "Ansvarlig kontrollerende (KPR)",
-              "value": "krp"
+              "value": "krp",
+              "messages": [
+                {
+                  "message": "Firmaet ditt har tilstrekkelig kompetanse",
+                  "test": {
+                    "type": "or",
+                    "clauses": [
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse1"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 4
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "mesterbrev eller fagskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse2"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 6
+                          },
+                          {
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "høgskole"
+                              },
+                              {
+                                "field": "competence.education",
+                                "operator": "eq",
+                                "value": "universitet"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "tiltaksklasse",
+                            "operator": "eq",
+                            "value": "tiltaksklasse3"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 8
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "eq",
+                            "value": "universitet"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever mestebrev/fagskole og minst fire års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever høgskolenivå og minst seks års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "message": "Krever universitetsnivå og minst åtte års erfaring",
+                  "warning": true,
+                  "test": {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "tiltaksklasse",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.education",
+                            "operator": "required"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "required"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
@@ -547,6 +1433,7 @@
         "Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ",
       "children": [
         {
+          "id": "responsibility.description",
           "property": "responsibility.description",
           "type": "Textarea",
           "heading": "Beskriv kort arbeidet som firmaet ditt tar ansvar for",
@@ -565,11 +1452,13 @@
         "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktsk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
       "children": [
         {
+          "id": "conformity.type",
           "property": "conformity.type",
           "type": "Checkbox",
           "heading": "Hvilken samsvarserklæring skal du sende?",
           "options": [
             {
+              "id": "conformity.type.1",
               "type": "Answer",
               "heading": "1 Rammetillatelse",
               "text":
@@ -581,6 +1470,7 @@
               }
             },
             {
+              "id": "conformity.type.2",
               "type": "Answer",
               "heading": "2 Igangsettelse",
               "text":
@@ -592,6 +1482,7 @@
               }
             },
             {
+              "id": "conformity.type.3",
               "type": "Answer",
               "heading": "3 Midlertidig brukstillatelse",
               "text":
@@ -603,6 +1494,7 @@
               }
             },
             {
+              "id": "conformity.type.4",
               "type": "Answer",
               "heading": "4 Ferdigattest",
               "text":
@@ -625,32 +1517,38 @@
         "Du må fylle ut denne informasjonen slik at det blir enkelt for ansvarlig søker og kommunen å knytte erklæringen til riktig byggesak.",
       "children": [
         {
+          "id": "responsiblefirm",
           "property": "responsiblefirm",
           "type": "Input",
           "heading": "Hvilket firma er ansvarlig søker?"
         },
         {
+          "id": "where",
           "type": "Group",
           "simple": true,
           "heading": "Hvor skal arbeidet gjøres?",
           "property": "where",
           "children": [
             {
+              "id": "where.municipality",
               "property": "where.municipality",
               "type": "Input",
               "heading": "Kommune"
             },
             {
+              "id": "where.section",
               "property": "where.section",
               "type": "Input",
               "heading": "Gårdsnummer"
             },
             {
+              "id": "where.number",
               "property": "where.number",
               "type": "Input",
               "heading": "Bruksnummer"
             },
             {
+              "id": "where.address",
               "property": "where.address",
               "type": "Input",
               "heading": "Gateadresse",
