@@ -149,7 +149,7 @@
                 "Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3.",
               "image": {
                 "url": "/images/skog.jpg",
-                "alt": ""
+                "alt": "Lite hus"
               },
               "value": "tiltaksklasse1"
             },
@@ -160,7 +160,7 @@
                 "Typiske bygninger i tiltaksklasse 2 er boligblokker og kontorbygg på 3-4 etasjer. Deler av utførelsen av større bygninger inntil 5 etasjer kan også være tiltaksklasse 2. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 3.",
               "image": {
                 "url": "/images/bygg.jpg",
-                "alt": ""
+                "alt": "Større hus"
               },
               "value": "tiltaksklasse2"
             },
@@ -171,7 +171,7 @@
                 "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig.",
               "image": {
                 "url": "/images/sykehus.jpg",
-                "alt": ""
+                "alt": "Størst hus"
               },
               "value": "tiltaksklasse3"
             }
