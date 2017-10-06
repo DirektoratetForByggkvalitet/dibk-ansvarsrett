@@ -16,7 +16,7 @@
           "property": "companytype",
           "type": "Radio",
           "heading": "Hvem representerer du?",
-          "suggestedAnswer": [
+          "options": [
             {
               "type": "Answer",
               "text": "Et norsk firma",
@@ -95,7 +95,7 @@
               "defaultOption": "Velg utdanningsnivå",
               "text":
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften",
-              "suggestedAnswer": [
+              "options": [
                 {
                   "type": "Answer",
                   "text": "Fag- eller svenneprøve",
@@ -471,7 +471,7 @@
           "heading": "Hvilken tiltaksklasse er jobben?",
           "text":
             "<a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser</a> i byggesaksforskriften",
-          "suggestedAnswer": [
+          "options": [
             {
               "type": "Answer",
               "heading": "Tiltaksklasse 1",
@@ -513,7 +513,7 @@
           "heading": "Hvilken funksjon har firmaet ditt i prosjektet??",
           "text":
             "<a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften",
-          "suggestedAnswer": [
+          "options": [
             {
               "type": "Answer",
               "heading": "Ansvarlig søker (SØK)",
@@ -567,7 +567,7 @@
           "property": "conformity.type",
           "type": "Checkbox",
           "heading": "Hvilken samsvarserklæring skal du sende?",
-          "suggestedAnswer": [
+          "options": [
             {
               "type": "Answer",
               "heading": "1 Rammetillatelse",
