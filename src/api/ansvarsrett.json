@@ -12,6 +12,7 @@
         "<p>Dersom firmaet ditt har norsk organisasjonsnummer vil informasjon om firmaet ditt hentes fra Brønnøysundregistrene.</p><p>Representerer du et utenlandsk firma, må du fylle inn informasjonen manuelt.</p>",
       "children": [
         {
+          "id": "companytype",
           "property": "companytype",
           "type": "Radio",
           "heading": "Hvem representerer du?",
@@ -47,6 +48,7 @@
         },
         {
           "type": "Group",
+          "simple": true,
           "heading": "Kontaktperson for prosjektet",
           "property": "contactperson",
           "children": [
@@ -97,41 +99,369 @@
                 {
                   "type": "Answer",
                   "text": "Fag- eller svenneprøve",
-                  "value": "a"
+                  "value": "fag- eller svenneprøve"
                 },
                 {
                   "type": "Answer",
                   "text": "Mesterbrev eller fagskole",
-                  "value": "b"
+                  "value": "mesterbrev eller fagskole"
                 },
                 {
                   "type": "Answer",
                   "text": "Utdanning på høgskolenivå",
-                  "value": "c"
+                  "value": "høgskole"
                 },
                 {
                   "type": "Answer",
                   "text": "Utdanning på universitetsnivå",
-                  "value": "d"
+                  "value": "universitet"
                 }
               ]
             },
             {
               "property": "competence.experience",
-              "type": "Input",
+              "type": "Number",
               "text":
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften",
               "heading": "År med relevant erfaring"
             },
             {
-              "property": "contactperson.phone",
-              "type": "Image",
               "heading": "Hvilken jobb kan du gjøre?",
               "text": "Utdannings- og erfaringsnivået avgjør hvilken jobb firmaet ditt kan gjøre",
-              "image": {
-                "url": "/images/matrix.png",
-                "alt": "alt for image"
-              }
+              "type": "Table",
+              "cells": [
+                [
+                  {
+                    "type": "Heading",
+                    "rowSpan": 2,
+                    "text": "FUNKSJON"
+                  },
+                  {
+                    "type": "Heading",
+                    "colSpan": 3,
+                    "text": "TILTAKSKLASSE"
+                  }
+                ],
+                [
+                  {
+                    "type": "Heading",
+                    "text": "Tiltaksklasse 1"
+                  },
+                  {
+                    "type": "Heading",
+                    "text": "Tiltaksklasse 2"
+                  },
+                  {
+                    "type": "Heading",
+                    "text": "Tiltaksklasse 3"
+                  }
+                ],
+                [
+                  {
+                    "type": "Heading",
+                    "text": "Ansvarlig søker"
+                  },
+                  {
+                    "type": "Cell",
+                    "rowSpan": 2,
+                    "text": "Mesterbrev/fagskole<br/>+ 4 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "mesterbrev eller fagskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 4
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Mesterbrev/fagskole<br/>+ 6 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "mesterbrev eller fagskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 6
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "rowSpan": 2,
+                    "text": "Universitetsnivå<br/>+ 8 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "field": "competence.education",
+                          "operator": "eq",
+                          "value": "universitet"
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 8
+                        }
+                      ]
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "Heading",
+                    "text": "Prosjekterende"
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Høgskolenivå<br/>+ 6 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 6
+                        }
+                      ]
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "Heading",
+                    "text": "Utførende"
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Fag-/svenneprøve<br/>+ 2 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "field": "competence.education",
+                          "operator": "required"
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Mestebrev-/fagskole<br/>+ 3 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "mesterbrev eller fagskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 3
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Høgskolenivå<br/>+ 5 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  }
+                ],
+                [
+                  {
+                    "type": "Heading",
+                    "text": "Kontrollerende"
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Mestebrev-/fagskole<br/>+ 4 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "mesterbrev eller fagskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 4
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Høgskolenivå<br/>+ 6 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "type": "or",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "høgskole"
+                            },
+                            {
+                              "field": "competence.education",
+                              "operator": "eq",
+                              "value": "universitet"
+                            }
+                          ]
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 6
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Cell",
+                    "text": "Universitetsnivå<br/>+ 8 års erfaring",
+                    "test": {
+                      "type": "and",
+                      "clauses": [
+                        {
+                          "field": "competence.education",
+                          "operator": "eq",
+                          "value": "universitet"
+                        },
+                        {
+                          "field": "competence.experience",
+                          "operator": "gte",
+                          "value": 8
+                        }
+                      ]
+                    }
+                  }
+                ]
+              ]
             }
           ]
         },
