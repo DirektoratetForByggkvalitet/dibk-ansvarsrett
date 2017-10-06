@@ -84,8 +84,9 @@
       "children": [
         {
           "type": "Group",
+          "simple": true,
           "heading":
-            "Hvilken utdanning og praksis, som er nyttig for jobben som nå skal gjøres, har faglig leder i firma?",
+            "Hvilken relevant utdanning og praksis har faglig leder i firma?",
           "property": "competence",
           "children": [
             {
@@ -630,6 +631,7 @@
         },
         {
           "type": "Group",
+          "simple": true,
           "heading": "Hvor skal arbeidet gjøres?",
           "property": "where",
           "children": [
