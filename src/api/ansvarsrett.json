@@ -91,8 +91,7 @@
           "id": "competence",
           "type": "Group",
           "simple": true,
-          "heading":
-            "Hvilken relevant utdanning og praksis har faglig leder i firma?",
+          "heading": "Hvilken relevant utdanning og praksis har faglig leder i firma?",
           "property": "competence",
           "children": [
             {
@@ -569,7 +568,7 @@
           "id": "function",
           "property": "function",
           "type": "Radio",
-          "heading": "Hvilken funksjon har firmaet ditt i prosjektet??",
+          "heading": "Hvilken funksjon har firmaet ditt i prosjektet?",
           "text":
             "<a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften",
           "options": [
@@ -1276,10 +1275,24 @@
         "Du må fylle ut denne informasjonen slik at det blir enkelt for ansvarlig søker og kommunen å knytte erklæringen til riktig byggesak.",
       "children": [
         {
-          "id": "responsiblefirm",
-          "property": "responsiblefirm",
-          "type": "Input",
-          "heading": "Hvilket firma er ansvarlig søker?"
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "function",
+                "operator": "neq",
+                "value": "sok"
+              },
+              "children": [
+                {
+                  "id": "responsiblefirm",
+                  "property": "responsiblefirm",
+                  "type": "Input",
+                  "heading": "Hvilket firma er ansvarlig søker?"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "where",
