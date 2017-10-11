@@ -108,25 +108,25 @@
                   "id": "competence.education.fagsvenneprove",
                   "type": "Answer",
                   "text": "Fag- eller svenneprøve",
-                  "value": "fag- eller svenneprøve"
+                  "value": 1
                 },
                 {
                   "id": "competence.education.mesterellerfagskole",
                   "type": "Answer",
                   "text": "Mesterbrev eller fagskole",
-                  "value": "mesterbrev eller fagskole"
+                  "value": 2
                 },
                 {
                   "id": "competence.education.hogskole",
                   "type": "Answer",
                   "text": "Utdanning på høgskolenivå",
-                  "value": "høgskole"
+                  "value": 3
                 },
                 {
                   "id": "competence.education.universitet",
                   "type": "Answer",
                   "text": "Utdanning på universitetsnivå",
-                  "value": "universitet"
+                  "value": 4
                 }
               ]
             },
@@ -190,24 +190,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "mesterbrev eller fagskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 2
                         },
                         {
                           "field": "competence.experience",
@@ -225,24 +210,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "mesterbrev eller fagskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 2
                         },
                         {
                           "field": "competence.experience",
@@ -263,7 +233,7 @@
                         {
                           "field": "competence.education",
                           "operator": "eq",
-                          "value": "universitet"
+                          "value": 4
                         },
                         {
                           "field": "competence.experience",
@@ -288,19 +258,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 3
                         },
                         {
                           "field": "competence.experience",
@@ -344,24 +304,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "mesterbrev eller fagskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 2
                         },
                         {
                           "field": "competence.experience",
@@ -379,19 +324,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 3
                         },
                         {
                           "field": "competence.experience",
@@ -416,24 +351,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "mesterbrev eller fagskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 2
                         },
                         {
                           "field": "competence.experience",
@@ -451,19 +371,9 @@
                       "type": "and",
                       "clauses": [
                         {
-                          "type": "or",
-                          "clauses": [
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "høgskole"
-                            },
-                            {
-                              "field": "competence.education",
-                              "operator": "eq",
-                              "value": "universitet"
-                            }
-                          ]
+                          "field": "competence.education",
+                          "operator": "gte",
+                          "value": 3
                         },
                         {
                           "field": "competence.experience",
@@ -483,7 +393,7 @@
                         {
                           "field": "competence.education",
                           "operator": "eq",
-                          "value": "universitet"
+                          "value": 4
                         },
                         {
                           "field": "competence.experience",
@@ -543,7 +453,8 @@
                     "clauses": [
                       {
                         "field": "competence.education",
-                        "operator": "required"
+                        "operator": "gte",
+                        "value": 1
                       },
                       {
                         "field": "competence.experience",
@@ -572,24 +483,9 @@
                     "type": "and",
                     "clauses": [
                       {
-                        "type": "or",
-                        "clauses": [
-                          {
-                            "field": "competence.education",
-                            "operator": "eq",
-                            "value": "mesterbrev eller fagskole"
-                          },
-                          {
-                            "field": "competence.education",
-                            "operator": "eq",
-                            "value": "høgskole"
-                          },
-                          {
-                            "field": "competence.education",
-                            "operator": "eq",
-                            "value": "universitet"
-                          }
-                        ]
+                        "field": "competence.education",
+                        "operator": "gte",
+                        "value": 2
                       },
                       {
                         "field": "competence.experience",
@@ -636,19 +532,9 @@
                     "type": "and",
                     "clauses": [
                       {
-                        "type": "or",
-                        "clauses": [
-                          {
-                            "field": "competence.education",
-                            "operator": "eq",
-                            "value": "høgskole"
-                          },
-                          {
-                            "field": "competence.education",
-                            "operator": "eq",
-                            "value": "universitet"
-                          }
-                        ]
+                        "field": "competence.education",
+                        "operator": "gte",
+                        "value": 3
                       },
                       {
                         "field": "competence.experience",
@@ -712,59 +598,9 @@
                             "value": 4
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "mesterbrev eller fagskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "and",
-                        "clauses": [
-                          {
-                            "field": "tiltaksklasse",
-                            "operator": "eq",
-                            "value": "tiltaksklasse2"
-                          },
-                          {
-                            "field": "competence.experience",
+                            "field": "competence.education",
                             "operator": "gte",
-                            "value": 6
-                          },
-                          {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "mesterbrev eller fagskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "value": 2
                           }
                         ]
                       },
@@ -784,7 +620,7 @@
                           {
                             "field": "competence.education",
                             "operator": "eq",
-                            "value": "universitet"
+                            "value": 4
                           }
                         ]
                       }
@@ -899,24 +735,9 @@
                             "value": 4
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "mesterbrev eller fagskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 2
                           }
                         ]
                       },
@@ -934,19 +755,9 @@
                             "value": 6
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 3
                           }
                         ]
                       },
@@ -966,7 +777,7 @@
                           {
                             "field": "competence.education",
                             "operator": "eq",
-                            "value": "universitet"
+                            "value": 4
                           }
                         ]
                       }
@@ -1100,24 +911,9 @@
                             "value": 3
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "mesterbrev eller fagskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 2
                           }
                         ]
                       },
@@ -1135,19 +931,9 @@
                             "value": 5
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 3
                           }
                         ]
                       }
@@ -1262,24 +1048,9 @@
                             "value": 4
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "mesterbrev eller fagskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 2
                           }
                         ]
                       },
@@ -1297,19 +1068,9 @@
                             "value": 6
                           },
                           {
-                            "type": "or",
-                            "clauses": [
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "høgskole"
-                              },
-                              {
-                                "field": "competence.education",
-                                "operator": "eq",
-                                "value": "universitet"
-                              }
-                            ]
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 3
                           }
                         ]
                       },
@@ -1329,7 +1090,7 @@
                           {
                             "field": "competence.education",
                             "operator": "eq",
-                            "value": "universitet"
+                            "value": 4
                           }
                         ]
                       }
