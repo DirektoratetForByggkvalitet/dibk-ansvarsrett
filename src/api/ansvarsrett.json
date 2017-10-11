@@ -1509,6 +1509,7 @@
                 "type": "Group",
                 "children": [
                   {
+                    "id": "insufficientCompentency",
                     "type": "Text",
                     "warning": true,
                     "heading": "Firmaet ditt har ikke tilstrekkelig formell kompetanse til å gjøre jobben"
@@ -1533,6 +1534,7 @@
                       },
                       "children": [
                         {
+                          "id": "class1exception",
                           "type": "Text",
                           "text": "<p>Men, siden du søker i tiltaksklasse 1 har du anledning til å søke plan og bygg kommunen der arbeidet skal utføres direkte om ansvarsrett.</p>"
                         }
@@ -1544,6 +1546,7 @@
                       },
                       "children": [
                         {
+                          "id": "failedButCanGoOn",
                           "type": "Text",
                           "text": "<p>Du kan fortsatt gå videre i veiviseren hvis du ønsker å få oversikt over hva man trenger å fylle ut, men du vil ikke kunne fullføre</p><p>Gå til resultatsiden for å få et mer utfyllende svar på hvorfor ditt firma ikke er kvalifisert til å søke.</p><p><a href=\"#\">Les mer om Krav til utdanning og praksis på DiBKs nettsider</a>.</p>"
                         }
