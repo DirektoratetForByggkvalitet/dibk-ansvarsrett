@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const IntroMain = styled.main`
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 75px 20px 200px;
   line-height: 1.6;
+  font-weight: 300;
   h1 {
     line-height: 1.2;
+    margin-bottom: 30px;
     &::before {
       content: "Veiviser";
       display: block;
@@ -17,9 +19,17 @@ export const IntroMain = styled.main`
       font-size: 20px;
     }
   }
+  section {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
   figure {
-    float: right;
     max-width: 300px;
+  }
+  figure img {
+    width: 100%;
   }
   ol, p {
     margin-bottom: 40px;
@@ -62,6 +72,9 @@ export const IntroMain = styled.main`
   @media screen and (max-width: 700px) {
     figure {
       float: none;
+    }
+    section {
+      display: block;
     }
   }
   @media screen and (max-width: 900px) {

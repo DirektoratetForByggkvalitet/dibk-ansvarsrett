@@ -19,16 +19,22 @@ export default function Intro({ close }) {
           Du får kun velge ett ansvarsområde med én tiltalsklasse og én funksjon for hver gang du
           gjennomfører denne veiviseren.
         </Primitives.Paragraphs.P>
-        <Primitives.Figure>
-          <img src="/image.jpg" alt="" />
-        </Primitives.Figure>
-        <Primitives.Heading.H2 small>Før du begynner må du vite:</Primitives.Heading.H2>
-        <ol>
-          <li>Organisasjonsnummeret til firmaet ditt</li>
-          <li>Utdanningen og erfaringen til faglig ledelse i firmaet ditt</li>
-          <li>Hva firmaet ditt skal ta ansvar for</li>
-          <li>Hvilket firma som er ansvarlig søker </li>
-        </ol>
+        <section>
+          <div>
+            <Primitives.Heading.H2 small>Før du begynner må du vite:</Primitives.Heading.H2>
+            <ol>
+              <li>Organisasjonsnummeret til firmaet ditt</li>
+              <li>Utdanningen og erfaringen til faglig ledelse i firmaet ditt</li>
+              <li>Hva firmaet ditt skal ta ansvar for</li>
+              <li>Hvilket firma som er ansvarlig søker </li>
+            </ol>
+          </div>
+          <div>
+            <Primitives.Figure>
+              <img src="/images/intro.svg" alt="" />
+            </Primitives.Figure>
+          </div>
+        </section>
         <Primitives.Heading.H2 small>Usikker?</Primitives.Heading.H2>
         <Primitives.Paragraphs.P>Snakk med en ansvarlig søker.</Primitives.Paragraphs.P>
         <Primitives.Heading.H2 small>Når veiviseren er fullført</Primitives.Heading.H2>

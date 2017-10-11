@@ -140,7 +140,6 @@
             },
             {
               "id": "possibleRoles",
-              "heading": "Hvilken jobb kan du gjøre?",
               "text": "Utdannings- og erfaringsnivået avgjør hvilken jobb firmaet ditt kan gjøre",
               "type": "Table",
               "cells": [
