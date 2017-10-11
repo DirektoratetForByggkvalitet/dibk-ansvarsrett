@@ -1,3 +1,5 @@
+/* globals window */
+
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
@@ -18,9 +20,8 @@ export default class App extends Component {
   }
 
   closeIntro() {
-    this.setState({
-      intro: false,
-    });
+    this.setState({ intro: false });
+    window.scrollTo(0, 0);
   }
 
   render() {
