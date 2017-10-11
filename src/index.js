@@ -4,4 +4,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root')); /* eslint no-undef: 0 */
-registerServiceWorker();
+
+if (window.location.hostname === 'localhost') {
+  registerServiceWorker();
+}
