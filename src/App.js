@@ -5,11 +5,10 @@ import { Provider } from 'react-redux';
 import autobind from 'react-autobind';
 
 import { Wizard, StyleProvider } from 'losen';
-import store from './store';
 import data from './api/ansvarsrett.json';
-import Intro from './pages/Intro';
-
 import dataExport from './exports/data-export';
+import Intro from './pages/Intro';
+import store from './store';
 
 export default class App extends Component {
   static propTypes = {
