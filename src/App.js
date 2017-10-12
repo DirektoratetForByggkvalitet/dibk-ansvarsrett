@@ -14,11 +14,11 @@ import dataExport from './exports/data-export';
 export default class App extends Component {
   static propTypes = {
     translations: PropTypes.object,
-  }
+  };
 
   static defaultProps = {
     translations: {},
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -44,11 +44,7 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard
-          wizard={data}
-          exports={{ dataExport }}
-          translations={this.props.translations}
-        />
+        <Wizard wizard={data} exports={{ dataExport }} translations={this.props.translations} />
       </Provider>
     );
   }
