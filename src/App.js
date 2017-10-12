@@ -1,8 +1,8 @@
 /* globals window */
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import autobind from 'react-autobind';
 
 import { Wizard, StyleProvider } from 'losen';
 import store from './store';
@@ -25,11 +25,16 @@ export default class App extends Component {
     this.state = {
       intro: true,
     };
-    this.closeIntro = this.closeIntro.bind(this);
+    autobind(this);
   }
 
   closeIntro() {
     this.setState({ intro: false });
+    window.scrollTo(0, 0);
+  }
+
+  showIntro() {
+    this.setState({ intro: true });
     window.scrollTo(0, 0);
   }
 
@@ -44,7 +49,12 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard wizard={data} exports={{ dataExport }} translations={this.props.translations} />
+        <Wizard
+          wizard={data}
+          exports={{ dataExport }}
+          translations={this.props.translations}
+          showIntro={this.showIntro}
+        />
       </Provider>
     );
   }
