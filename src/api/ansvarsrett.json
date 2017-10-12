@@ -1701,7 +1701,8 @@
               "property": "where.address",
               "type": "Input",
               "heading": "Gateadresse",
-              "text": "Fylles ut hvis eiendommen har gateadresse"
+              "text": "Fylles ut hvis eiendommen har gateadresse",
+              "optional": true
             }
           ]
         }
