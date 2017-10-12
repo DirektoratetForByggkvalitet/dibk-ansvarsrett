@@ -26,7 +26,7 @@
             {
               "id": "companytype.foreign",
               "type": "Answer",
-              "text": "Et utenlands firma",
+              "text": "Et utenlandsk firma",
               "value": "foreign"
             }
           ]

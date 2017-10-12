@@ -23,6 +23,7 @@ export const IntroMain = styled.main`
     display: flex;
     > * {
       flex: 1;
+      align-self: center;
     }
   }
   figure {
