@@ -1,26 +1,40 @@
+/* globals window */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import autobind from 'react-autobind';
 
 import { Wizard, StyleProvider } from 'losen';
-import store from './store';
 import data from './api/ansvarsrett.json';
-import Intro from './pages/Intro';
-
 import dataExport from './exports/data-export';
+import Intro from './pages/Intro';
+import store from './store';
 
 export default class App extends Component {
+  static propTypes = {
+    translations: PropTypes.object,
+  };
+
+  static defaultProps = {
+    translations: {},
+  };
+
   constructor(props) {
     super(props);
     this.state = {
       intro: true,
     };
-    this.closeIntro = this.closeIntro.bind(this);
+    autobind(this);
   }
 
   closeIntro() {
-    this.setState({
-      intro: false,
-    });
+    this.setState({ intro: false });
+    window.scrollTo(0, 0);
+  }
+
+  showIntro() {
+    this.setState({ intro: true });
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -34,7 +48,12 @@ export default class App extends Component {
 
     return (
       <Provider store={store}>
-        <Wizard wizard={data} exports={{ dataExport }} />
+        <Wizard
+          wizard={data}
+          exports={{ dataExport }}
+          translations={this.props.translations}
+          showIntro={this.showIntro}
+        />
       </Provider>
     );
   }
