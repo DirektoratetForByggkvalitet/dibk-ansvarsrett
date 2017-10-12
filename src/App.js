@@ -13,11 +13,11 @@ import store from './store';
 export default class App extends Component {
   static propTypes = {
     translations: PropTypes.object,
-  };
+  }
 
   static defaultProps = {
     translations: {},
-  };
+  }
 
   constructor(props) {
     super(props);
