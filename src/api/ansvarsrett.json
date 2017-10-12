@@ -20,13 +20,13 @@
             {
               "id": "companytype.norwegian",
               "type": "Answer",
-              "text": "Et norsk firma",
+              "heading": "Et norsk firma",
               "value": "norwegian"
             },
             {
               "id": "companytype.foreign",
               "type": "Answer",
-              "text": "Et utenlands firma",
+              "heading": "Et utenlands firma",
               "value": "foreign"
             }
           ]
@@ -106,25 +106,25 @@
                 {
                   "id": "competence.education.fagsvenneprove",
                   "type": "Answer",
-                  "text": "Fag- eller svenneprøve",
+                  "heading": "Fag- eller svenneprøve",
                   "value": 1
                 },
                 {
                   "id": "competence.education.mesterellerfagskole",
                   "type": "Answer",
-                  "text": "Mesterbrev eller fagskole",
+                  "heading": "Mesterbrev eller fagskole",
                   "value": 2
                 },
                 {
                   "id": "competence.education.hogskole",
                   "type": "Answer",
-                  "text": "Utdanning på høgskolenivå",
+                  "heading": "Utdanning på høgskolenivå",
                   "value": 3
                 },
                 {
                   "id": "competence.education.universitet",
                   "type": "Answer",
-                  "text": "Utdanning på universitetsnivå",
+                  "heading": "Utdanning på universitetsnivå",
                   "value": 4
                 }
               ]
