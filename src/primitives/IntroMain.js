@@ -6,6 +6,7 @@ export const IntroMain = styled.main`
   padding: 75px 20px 200px;
   line-height: 1.6;
   font-weight: 300;
+  font-size: 18px;
   h1 {
     line-height: 1.2;
     margin-bottom: 30px;
@@ -16,7 +17,7 @@ export const IntroMain = styled.main`
       text-transform: uppercase;
       letter-spacing: 0.05em;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 1.2rem;
     }
   }
   section {
@@ -44,6 +45,7 @@ export const IntroMain = styled.main`
     counter-increment: step;
     position: relative;
     margin-bottom: 1.6em;
+    color: inherit;
     &::before {
       content: counter(step);
       color: white;
@@ -71,11 +73,15 @@ export const IntroMain = styled.main`
     font-size: 12px;
   }
   @media screen and (max-width: 700px) {
+    font-size: 16px;
     figure {
       float: none;
     }
     section {
       display: block;
+    }
+    ol {
+      margin-left: 2.5em;
     }
   }
   @media screen and (max-width: 900px) {
