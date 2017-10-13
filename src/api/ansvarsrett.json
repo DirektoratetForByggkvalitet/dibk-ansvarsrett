@@ -20,7 +20,7 @@
             {
               "id": "companytype.norwegian",
               "type": "Answer",
-              "heading": "Et norsk firma",
+              "text": "Et norsk firma",
               "value": "norwegian"
             },
             {
@@ -85,7 +85,7 @@
       "type": "Page",
       "heading": "Har firmaet rett kompetanse til å gjøre jobben?",
       "lead":
-        "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tllegg til å ha minst 2 års relevant arbeidserfaring.</p>",
+        "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tillegg til å ha minst 2 års relevant arbeidserfaring.</p>",
       "children": [
         {
           "id": "competence",
@@ -1513,8 +1513,7 @@
                     "id": "insufficientCompentency",
                     "type": "Text",
                     "warning": true,
-                    "heading": "Firmaet ditt har ikke tilstrekkelig formell kompetanse til å gjøre jobben",
-                    "text": ""
+                    "heading": "Firmaet ditt har ikke tilstrekkelig formell kompetanse til å gjøre jobben"
                   },
                   {
                     "type": "Branch",
@@ -1597,7 +1596,7 @@
             {
               "id": "conformity.type.1",
               "type": "Answer",
-              "heading": "1 Rammetillatelse",
+              "heading": "Rammetillatelse",
               "text":
                 "Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre.",
               "value": "1",
@@ -1609,7 +1608,7 @@
             {
               "id": "conformity.type.2",
               "type": "Answer",
-              "heading": "2 Igangsettelse",
+              "heading": "Igangsettelse",
               "text":
                 "Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!",
               "value": "2",
@@ -1621,7 +1620,7 @@
             {
               "id": "conformity.type.3",
               "type": "Answer",
-              "heading": "3 Midlertidig brukstillatelse",
+              "heading": "Midlertidig brukstillatelse",
               "text":
                 "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk.",
               "value": "3",
@@ -1633,7 +1632,7 @@
             {
               "id": "conformity.type.4",
               "type": "Answer",
-              "heading": "4 Ferdigattest",
+              "heading": "Ferdigattest",
               "text":
                 "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”",
               "value": "4",
