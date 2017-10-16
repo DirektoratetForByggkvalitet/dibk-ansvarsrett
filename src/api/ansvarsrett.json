@@ -1513,7 +1513,7 @@
                     "id": "insufficientCompentency",
                     "type": "Text",
                     "warning": true,
-                    "heading": "Firmaet ditt har ikke tilstrekkelig formell kompetanse til å gjøre jobben"
+                    "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben"
                   },
                   {
                     "type": "Branch",
@@ -1537,7 +1537,7 @@
                         {
                           "id": "class1exception",
                           "type": "Text",
-                          "text": "<p>Men, siden du søker i tiltaksklasse 1 har du anledning til å søke plan og bygg kommunen der arbeidet skal utføres direkte om ansvarsrett.</p>"
+                          "text": "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
                         }
                       ]
                     }, {
@@ -1549,7 +1549,7 @@
                         {
                           "id": "failedButCanGoOn",
                           "type": "Text",
-                          "text": "<p>Du kan fortsatt gå videre i veiviseren hvis du ønsker å få oversikt over hva man trenger å fylle ut, men du vil ikke kunne fullføre</p><p>Gå til resultatsiden for å få et mer utfyllende svar på hvorfor ditt firma ikke er kvalifisert til å søke.</p><p><a href=\"#\">Les mer om Krav til utdanning og praksis på DiBKs nettsider</a>.</p>"
+                          "text": "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
                         }
                       ]
                     }]
@@ -1712,9 +1712,9 @@
     {
       "id": "hooray",
       "type": "Result",
-      "heading": "Se over og fullfør",
+      "heading": "Firmaet ditt kan erklære ansvar",
       "lead":
-        "<p>Les nøye gjennom erklæringen før du fortsetter.</p><p>Når du trykker fullfør vil du motta erklæringen på epost. Den må du skrive ut, signere og sende videre til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>",
+        "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter. og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
       "exporter": "dataExport"
     }
   ]
