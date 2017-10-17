@@ -421,7 +421,7 @@
               "text":
                 "Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3.",
               "image": {
-                "url": "/images/skog.jpg",
+                "url": "/images/tk1.svg",
                 "alt": "Lite hus"
               },
               "value": "tiltaksklasse1",
@@ -470,7 +470,7 @@
               "text":
                 "Typiske bygninger i tiltaksklasse 2 er boligblokker og kontorbygg på 3-4 etasjer. Deler av utførelsen av større bygninger inntil 5 etasjer kan også være tiltaksklasse 2. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 3.",
               "image": {
-                "url": "/images/bygg.jpg",
+                "url": "/images/tk2.svg",
                 "alt": "Større hus"
               },
               "value": "tiltaksklasse2",
@@ -519,7 +519,7 @@
               "text":
                 "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig.",
               "image": {
-                "url": "/images/sykehus.jpg",
+                "url": "/images/tk3.svg",
                 "alt": "Størst hus"
               },
               "value": "tiltaksklasse3",
@@ -1597,17 +1597,17 @@
           "id": "conformity.type",
           "property": "conformity.type",
           "type": "Checkbox",
-          "heading": "Hvilken samsvarserklæring skal du sende?",
+          "heading": "Ved hvilken delsøknad regner du å sende inn samsvarserklæring?",
           "options": [
             {
               "id": "conformity.type.1",
               "type": "Answer",
               "heading": "Rammetillatelse",
               "text":
-                "Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre.",
+                "Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre. Det er sjelden at du trenger å sende inn samsvarserklæring ved rammetillatelse",
               "value": "1",
               "image": {
-                "url": "/images/notes.jpg",
+                "url": "/images/samsvar1.svg",
                 "alt": "Rammetillatelse"
               }
             },
@@ -1616,10 +1616,10 @@
               "type": "Answer",
               "heading": "Igangsettelse",
               "text":
-                "Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne!",
+                "Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne! De fleste samsvarserklæringer for prosjektering bør være på plass ved denne søknaden.",
               "value": "2",
               "image": {
-                "url": "/images/person.jpg",
+                "url": "/images/samsvar2.svg",
                 "alt": "Igangsettelse"
               }
             },
@@ -1628,10 +1628,10 @@
               "type": "Answer",
               "heading": "Midlertidig brukstillatelse",
               "text":
-                "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk.",
+                "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk. Det er vanlig at samsvarserklæringer på utførelse foreligger her.",
               "value": "3",
               "image": {
-                "url": "/images/pen.jpg",
+                "url": "/images/samsvar3.svg",
                 "alt": "Midlertidig brukstillatelse"
               }
             },
@@ -1640,10 +1640,10 @@
               "type": "Answer",
               "heading": "Ferdigattest",
               "text":
-                "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”",
+                "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”. Før du får ferdigattest må samsvarserklæringer som erklærer at arbeidet er helt ferdig foreligge for alle ansvarsområder. Er disse allerede sendt, trenger du ikke sende de på nytt.",
               "value": "4",
               "image": {
-                "url": "/images/nail.jpg",
+                "url": "/images/samsvar4.svg",
                 "alt": "Ferdigattest"
               }
             }
