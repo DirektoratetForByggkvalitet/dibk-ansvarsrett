@@ -1180,384 +1180,390 @@
             }
           ]
         },
-
         {
           "type": "Branch",
-          "branches": [{
-            "test": {
-              "type": "or",
-              "clauses": [
+          "branches": [
+            {
+              "test": {
+                "type": "or",
+                "clauses": [
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "sok"
+                          },
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "pro"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 4
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "field": "function",
+                        "operator": "eq",
+                        "value": "utf"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 2
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse1"
+                      },
+                      {
+                        "field": "function",
+                        "operator": "eq",
+                        "value": "krp"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 4
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "field": "function",
+                        "operator": "eq",
+                        "value": "sok"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 6
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "pro"
+                          },
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "krp"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 6
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "pro"
+                          },
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "krp"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 6
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse2"
+                      },
+                      {
+                        "field": "function",
+                        "operator": "eq",
+                        "value": "utf"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 3
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "sok"
+                          },
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "pro"
+                          },
+                          {
+                            "field": "function",
+                            "operator": "eq",
+                            "value": "krp"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 8
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 4
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "clauses": [
+                      {
+                        "field": "class",
+                        "operator": "eq",
+                        "value": "tiltaksklasse3"
+                      },
+                      {
+                        "field": "function",
+                        "operator": "eq",
+                        "value": "utf"
+                      },
+                      {
+                        "type": "or",
+                        "clauses": [
+                          {
+                            "field": "competence.experience",
+                            "operator": "lt",
+                            "value": 5
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "lt",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "children": [
                 {
-                  "type": "and",
-                  "clauses": [
+                  "id": "competencyError",
+                  "type": "Error",
+                  "children": [
                     {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse1"
+                      "id": "insufficientCompentency",
+                      "type": "Text",
+                      "warning": true,
+                      "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben"
                     },
                     {
-                      "type": "or",
-                      "clauses": [
+                      "type": "Branch",
+                      "branches": [
                         {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "sok"
+                          "test": {
+                            "type": "and",
+                            "clauses": [
+                              {
+                                "field": "class",
+                                "operator": "eq",
+                                "value": "tiltaksklasse1"
+                              },
+                              {
+                                "field": "function",
+                                "operator": "neq",
+                                "value": "krp"
+                              }
+                            ]
+                          },
+                          "children": [
+                            {
+                              "id": "class1exception",
+                              "type": "Text",
+                              "text":
+                                "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                            }
+                          ]
                         },
                         {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "pro"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 4
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse1"
-                    },
-                    {
-                      "field": "function",
-                      "operator": "eq",
-                      "value": "utf"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 2
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 1
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse1"
-                    },
-                    {
-                      "field": "function",
-                      "operator": "eq",
-                      "value": "krp"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 4
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse2"
-                    },
-                    {
-                      "field": "function",
-                      "operator": "eq",
-                      "value": "sok"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 6
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse2"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "pro"
-                        },
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "krp"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 6
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 3
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse2"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "pro"
-                        },
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "krp"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 6
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 3
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse2"
-                    },
-                    {
-                      "field": "function",
-                      "operator": "eq",
-                      "value": "utf"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 3
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse3"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "sok"
-                        },
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "pro"
-                        },
-                        {
-                          "field": "function",
-                          "operator": "eq",
-                          "value": "krp"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 8
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 4
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "and",
-                  "clauses": [
-                    {
-                      "field": "class",
-                      "operator": "eq",
-                      "value": "tiltaksklasse3"
-                    },
-                    {
-                      "field": "function",
-                      "operator": "eq",
-                      "value": "utf"
-                    },
-                    {
-                      "type": "or",
-                      "clauses": [
-                        {
-                          "field": "competence.experience",
-                          "operator": "lt",
-                          "value": 5
-                        },
-                        {
-                          "field": "competence.education",
-                          "operator": "lt",
-                          "value": 3
+                          "test": {
+                            "field": "class",
+                            "operator": "required"
+                          },
+                          "children": [
+                            {
+                              "id": "failedButCanGoOn",
+                              "type": "Text",
+                              "text":
+                                "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
+                            }
+                          ]
                         }
                       ]
                     }
                   ]
                 }
               ]
-            },
-            "children": [
-              {
-                "id": "competencyError",
-                "type": "Error",
-                "children": [
-                  {
-                    "id": "insufficientCompentency",
-                    "type": "Text",
-                    "warning": true,
-                    "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben"
-                  },
-                  {
-                    "type": "Branch",
-                    "branches": [{
-                      "test": {
-                        "type": "and",
-                        "clauses": [
-                          {
-                            "field": "class",
-                            "operator": "eq",
-                            "value": "tiltaksklasse1"
-                          },
-                          {
-                            "field": "function",
-                            "operator": "neq",
-                            "value": "krp"
-                          }
-                        ]
-                      },
-                      "children": [
-                        {
-                          "id": "class1exception",
-                          "type": "Text",
-                          "text": "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
-                        }
-                      ]
-                    }, {
-                      "test": {
-                        "field": "class",
-                        "operator": "required"
-                      },
-                      "children": [
-                        {
-                          "id": "failedButCanGoOn",
-                          "type": "Text",
-                          "text": "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
-                        }
-                      ]
-                    }]
-                  }
-                ]
-              }
-            ]
-          }]
+            }
+          ]
         }
       ]
     },
@@ -1715,7 +1721,78 @@
       "heading": "Firmaet ditt kan erklære ansvar",
       "lead":
         "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter. og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
-      "exporter": "dataExport"
+      "exporter": "dataExport",
+      "children": [
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "function",
+                "operator": "eq",
+                "value": "pro"
+              },
+              "children": [
+                {
+                  "id": "responsable",
+                  "property": "responsable",
+                  "type": "Text",
+                  "text":
+                    "<input type=\"checkbox\" />Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3."
+                }
+              ],
+              "test": {
+                "field": "function",
+                "operator": "eq",
+                "value": "krp"
+              },
+              "children": [
+                {
+                  "id": "responsable",
+                  "property": "conformity.type",
+                  "type": "Text",
+                  "text":
+                    "<input type=\"checkbox\" />Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5."
+                }
+              ],
+              "test": {
+                "field": "function",
+                "operator": "eq",
+                "value": "utf"
+              },
+              "children": [
+                {
+                  "id": "responsable",
+                  "property": "conformity.type",
+                  "type": "Text",
+                  "text":
+                    "<input type=\"checkbox\" />Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "statement",
+          "property": "statement",
+          "type": "Text",
+          "text":
+            "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />1) Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br /> 2) Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
+        },
+        {
+          "id": "signature",
+          "property": "signature",
+          "type": "Signature"
+        },
+        {
+          "id": "preprint",
+          "property": "preprint",
+          "type": "Text",
+          "heading": "For å sende inn erklæringen",
+          "text":
+            "Erklæringen er nå fylt ut og klar til å sendes inn. Du må selv skrive ut erklæringen og sende den til (adresse her!)"
+        }
+      ]
     }
   ]
 }
