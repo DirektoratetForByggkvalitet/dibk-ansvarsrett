@@ -1742,7 +1742,9 @@
                   "text":
                     "<input type=\"checkbox\" />Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3."
                 }
-              ],
+              ]
+            },
+            {
               "test": {
                 "field": "function",
                 "operator": "eq",
@@ -1756,7 +1758,9 @@
                   "text":
                     "<input type=\"checkbox\" />Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5."
                 }
-              ],
+              ]
+            },
+            {
               "test": {
                 "field": "function",
                 "operator": "eq",
