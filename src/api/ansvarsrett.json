@@ -2254,7 +2254,7 @@
                   "type": "Text",
                   "heading": "Er alt korrekt?",
                   "text":
-                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>"
+                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
               ]
             },
@@ -2271,7 +2271,7 @@
                   "type": "Text",
                   "heading": "Er alt korrekt?",
                   "text":
-                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den videre til kommunen sammen med gjennomføringsplanen.</p><p><b>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</b></p>"
+                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den videre til kommunen sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
               ]
             }
