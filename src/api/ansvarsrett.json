@@ -1651,6 +1651,26 @@
           "summary": "Se eksempler",
           "details":
             "<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "function",
+                "operator": "neq",
+                "value": "sok"
+              },
+              "children": [
+                {
+                  "id": "responsiblefirm",
+                  "property": "responsiblefirm",
+                  "type": "Input",
+                  "heading": "Hvilket firma er ansvarlig søker?"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1722,30 +1742,10 @@
     {
       "id": "responsible",
       "type": "Page",
-      "heading": "Hvor er byggeplassen og hvem er ansvarlig søker?",
+      "heading": "Informasjon om byggeplassen",
       "lead":
-        "Du må fylle ut denne informasjonen slik at det blir enkelt for ansvarlig søker og kommunen å knytte erklæringen til riktig byggesak.",
+        "Du må fylle ut denne informasjonen slik at det blir enkelt å knytte erklæringen til riktig byggesak.",
       "children": [
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "field": "function",
-                "operator": "neq",
-                "value": "sok"
-              },
-              "children": [
-                {
-                  "id": "responsiblefirm",
-                  "property": "responsiblefirm",
-                  "type": "Input",
-                  "heading": "Hvilket firma er ansvarlig søker?"
-                }
-              ]
-            }
-          ]
-        },
         {
           "id": "where",
           "type": "Group",
@@ -1778,57 +1778,6 @@
               "heading": "Gateadresse",
               "text": "Fylles ut hvis eiendommen har gateadresse",
               "optional": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "Branch",
-      "branches": [
-        {
-          "test": {
-            "type": "and",
-            "clauses": [
-              {
-                "type": "and",
-                "clauses": [
-                  {
-                    "field": "class",
-                    "operator": "eq",
-                    "value": "tiltaksklasse1"
-                  },
-                  {
-                    "field": "function",
-                    "operator": "neq",
-                    "value": "krp"
-                  }
-                ]
-              },
-              {
-                "type": "or",
-                "clauses": [
-                  {
-                    "field": "competence.experience",
-                    "operator": "lt",
-                    "value": 2
-                  },
-                  {
-                    "field": "competence.education",
-                    "operator": "eq",
-                    "value": 0
-                  }
-                ]
-              }
-            ]
-          },
-          "children": [
-            {
-              "id": "missingexperience",
-              "type": "Result",
-              "heading": "Firmaet ditt kan ikke erklære ansvar for arbeidet som skal gjøres.",
-              "lead":
-                "Dette skyldes at arbeidet som skal gjøres krever mer (relevant utdanning) og/eller (relevant erfaring) enn det firmaet ditt har. Du kan lese mer om kravene til utdanning og praksis på DiBKs nettsider. (lenke)"
             }
           ]
         }
@@ -2186,9 +2135,9 @@
                         {
                           "id": "class1exceptionresult",
                           "type": "Result",
-                          "heading": "error apge heading 125913413",
+                          "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben",
                           "lead":
-                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
                         }
                       ]
                     },
@@ -2201,9 +2150,9 @@
                         {
                           "id": "failedButCanGoOnresult",
                           "type": "Result",
-                          "heading": "error page heading 1235642311",
+                          "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben",
                           "lead":
-                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
+                            "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>"
                         }
                       ]
                     }
