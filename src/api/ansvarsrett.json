@@ -2186,6 +2186,7 @@
                   "id": "responsable",
                   "property": "responsable",
                   "type": "Text",
+                  "printonly": true,
                   "text":
                     "<input type=\"checkbox\" />Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3."
                 }
@@ -2202,6 +2203,7 @@
                   "id": "responsable",
                   "property": "conformity.type",
                   "type": "Text",
+                  "printonly": true,
                   "text":
                     "<input type=\"checkbox\" />Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5."
                 }
@@ -2218,6 +2220,7 @@
                   "id": "responsable",
                   "property": "conformity.type",
                   "type": "Text",
+                  "printonly": true,
                   "text":
                     "<input type=\"checkbox\" />Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4."
                 }
@@ -2237,7 +2240,8 @@
           "id": "signature",
           "property": "signature",
           "type": "Signature",
-          "optional": true
+          "optional": true,
+          "printonly": true
         },
         {
           "type": "Branch",
@@ -2245,7 +2249,7 @@
             {
               "test": {
                 "field": "function",
-                "operator": "eq",
+                "operator": "neq",
                 "value": "sok"
               },
               "children": [
@@ -2263,7 +2267,7 @@
             {
               "test": {
                 "field": "function",
-                "operator": "neq",
+                "operator": "eq",
                 "value": "sok"
               },
               "children": [
