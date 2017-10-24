@@ -1788,7 +1788,8 @@
         {
           "id": "signature",
           "property": "signature",
-          "type": "Signature"
+          "type": "Signature",
+          "optional": true
         }
       ]
     }
