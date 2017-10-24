@@ -1784,6 +1784,57 @@
       ]
     },
     {
+      "type": "Branch",
+      "branches": [
+        {
+          "test": {
+            "type": "and",
+            "clauses": [
+              {
+                "type": "and",
+                "clauses": [
+                  {
+                    "field": "class",
+                    "operator": "eq",
+                    "value": "tiltaksklasse1"
+                  },
+                  {
+                    "field": "function",
+                    "operator": "neq",
+                    "value": "krp"
+                  }
+                ]
+              },
+              {
+                "type": "or",
+                "clauses": [
+                  {
+                    "field": "competence.experience",
+                    "operator": "lt",
+                    "value": 2
+                  },
+                  {
+                    "field": "competence.education",
+                    "operator": "eq",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "children": [
+            {
+              "id": "kommunez",
+              "type": "Result",
+              "heading": "Firmaet ditt kan ikke erklære ansvar for arbeidet som skal gjøres.",
+              "lead":
+                "Dette skyldes at arbeidet som skal gjøres krever mer (relevant utdanning) og/eller (relevant erfaring) enn det firmaet ditt har. Du kan lese mer om kravene til utdanning og praksis på DiBKs nettsider. (lenke)"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "hooray",
       "type": "Result",
       "heading": "Firmaet ditt kan erklære ansvar",
