@@ -2268,8 +2268,8 @@
               },
               "children": [
                 {
-                  "id": "responsable",
-                  "property": "responsable",
+                  "id": "end.correct",
+                  "property": "end.correct",
                   "type": "Text",
                   "printhide": true,
                   "heading": "Er alt korrekt?",
