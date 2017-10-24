@@ -166,6 +166,12 @@
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften",
               "options": [
                 {
+                  "id": "competence.education.none",
+                  "type": "Answer",
+                  "heading": "Ingen",
+                  "value": 0
+                },
+                {
                   "id": "competence.education.fagsvenneprove",
                   "type": "Answer",
                   "heading": "Fag- eller svenneprøve",
