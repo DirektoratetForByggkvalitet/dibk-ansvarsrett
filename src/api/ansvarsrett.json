@@ -2229,6 +2229,7 @@
           "id": "statement",
           "property": "statement",
           "type": "Text",
+          "printonly": true,
           "text":
             "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />1) Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br /> 2) Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
         },
