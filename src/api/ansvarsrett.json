@@ -2171,8 +2171,6 @@
       "lead":
         "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter. og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
       "exporter": "dataExport",
-      "end":
-        "<h2>For å sende inn erklæringen</h2>Erklæringen er nå fylt ut og klar til å sendes inn. Du må selv skrive ut erklæringen og sende den til (adresse her!)",
       "children": [
         {
           "type": "Branch",
@@ -2278,6 +2276,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": "end",
+          "property": "end",
+          "type": "Text",
+          "heading": "For å sende inn erklæringen",
+          "text":
+            "<p>Erklæringen er nå fylt ut og klar til å sendes inn. Du må selv skrive ut erklæringen og sende den til (adresse her!)</p>"
         }
       ]
     }
