@@ -32,20 +32,82 @@
           ]
         },
         {
-          "id": "orgNr",
-          "property": "orgnr",
-          "type": "FetchOrg",
-          "heading": "Organisasjonsnummer",
-          "text": "Eksempel: 123 456 789",
-          "placeholder": "987 654 321",
-          "source":
-            "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
-          "information":
-            "Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href=\"https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/\">Samordnet registermelding</a> i Altinn før du fortsetter.",
-          "fetchSG": true,
-          "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
-          "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
-          "SGsource": "https://sgregister.dibk.no/api/enterprises/"
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "field": "companytype",
+                "operator": "eq",
+                "value": "norwegian"
+              },
+              "children": [
+                {
+                  "id": "orgNr",
+                  "property": "orgnr",
+                  "type": "FetchOrg",
+                  "heading": "Organisasjonsnummer",
+                  "text": "Eksempel: 123 456 789",
+                  "placeholder": "987 654 321",
+                  "source":
+                    "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
+                  "information":
+                    "Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href=\"https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/\">Samordnet registermelding</a> i Altinn før du fortsetter.",
+                  "fetchSG": true,
+                  "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
+                  "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
+                  "SGsource": "https://sgregister.dibk.no/api/enterprises/"
+                }
+              ]
+            },
+            {
+              "test": {
+                "field": "companytype",
+                "operator": "eq",
+                "value": "foreign"
+              },
+              "children": [
+                {
+                  "id": "companyinfo",
+                  "type": "Group",
+                  "simple": true,
+                  "heading": "Firmainformasjon",
+                  "property": "foreigncompany",
+                  "children": [
+                    {
+                      "id": "foreigncompany.country",
+                      "property": "foreigncompany.country",
+                      "type": "Input",
+                      "heading": "Land"
+                    },
+                    {
+                      "id": "foreigncompany.name",
+                      "property": "foreigncompany.name",
+                      "type": "Input",
+                      "heading": "Firmaets navn"
+                    },
+                    {
+                      "id": "foreigncompany.adresse",
+                      "property": "contactperson.adresse",
+                      "type": "Input",
+                      "heading": "Adresse"
+                    },
+                    {
+                      "id": "foreigncompany.postnummer",
+                      "property": "contactperson.postnummer",
+                      "type": "Input",
+                      "heading": "Postnummer"
+                    },
+                    {
+                      "id": "foreigncompany.poststed",
+                      "property": "contactperson.poststed",
+                      "type": "Input",
+                      "heading": "Poststed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "contactperson",
