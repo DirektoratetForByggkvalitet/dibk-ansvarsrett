@@ -741,7 +741,7 @@
                   }
                 },
                 {
-                  "message": "Krever mestebrev/fagskole og minst seks års erfaring. Anders",
+                  "message": "Krever mestebrev/fagskole og minst seks års erfaring.",
                   "warning": true,
                   "test": {
                     "type": "and",
