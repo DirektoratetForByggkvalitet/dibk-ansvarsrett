@@ -203,7 +203,8 @@
               "type": "Number",
               "text":
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften",
-              "heading": "År med relevant erfaring"
+              "heading": "År med relevant erfaring",
+              "minimum": 0
             },
             {
               "id": "possibleRoles",
