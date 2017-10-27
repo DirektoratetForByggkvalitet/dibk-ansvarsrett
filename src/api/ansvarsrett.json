@@ -2189,8 +2189,11 @@
       "id": "hooray",
       "type": "Result",
       "heading": "Firmaet ditt kan erklære ansvar",
+      "errorheading": "Du har ikke svart på alle spørsmålene",
       "lead":
         "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter. og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
+      "errorlead":
+        "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
       "exporter": "dataExport",
       "children": [
         {
