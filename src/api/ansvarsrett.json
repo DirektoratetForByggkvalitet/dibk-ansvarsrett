@@ -676,6 +676,26 @@
                           {
                             "field": "class",
                             "operator": "eq",
+                            "value": "tiltaksklasse2"
+                          },
+                          {
+                            "field": "competence.experience",
+                            "operator": "gte",
+                            "value": 6
+                          },
+                          {
+                            "field": "competence.education",
+                            "operator": "gte",
+                            "value": 2
+                          }
+                        ]
+                      },
+                      {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "class",
+                            "operator": "eq",
                             "value": "tiltaksklasse3"
                           },
                           {
@@ -721,7 +741,7 @@
                   }
                 },
                 {
-                  "message": "Krever mestebrev/fagskole og minst seks års erfaring",
+                  "message": "Krever mestebrev/fagskole og minst seks års erfaring. Anders",
                   "warning": true,
                   "test": {
                     "type": "and",
