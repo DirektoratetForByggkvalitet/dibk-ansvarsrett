@@ -147,7 +147,7 @@
       "type": "Page",
       "heading": "Har firmaet rett kompetanse til å gjøre jobben?",
       "lead":
-        "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p><p>Eks: Hvis firmaet skal ha ansvar for tømrerarbeider for en enebolig, må fagansvarlig for jobben minst være tømrersvenn i tillegg til å ha minst 2 års relevant arbeidserfaring.</p>",
+        "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p>",
       "children": [
         {
           "id": "competence",
@@ -488,7 +488,7 @@
               "type": "Answer",
               "heading": "Tiltaksklasse 1",
               "text":
-                "Som regel vil alt arbeid med oppføring av eneboliger, tomannsboliger og rekkehus komme inn under tiltaksklasse 1. Deler av utførelsen av større boligbygninger innitil 3 etasjer kan også være tiltaksklasse 1. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 2 eller 3.",
+                "Alt arbeid med eneboliger, tomannsboliger og rekkehus er normalt tiltaksklasse 1. Spesielt vanskelige forhold kan komme i høyere tiltaksklasse. I større bygninger kan noe av arbeidene som ikke er kompliserte settes i tiltaksklasse 1.",
               "image": {
                 "url": "/images/tk1.svg",
                 "alt": "Lite hus"
@@ -537,7 +537,7 @@
               "type": "Answer",
               "heading": "Tiltaksklasse 2",
               "text":
-                "Typiske bygninger i tiltaksklasse 2 er boligblokker og kontorbygg på 3-4 etasjer. Deler av utførelsen av større bygninger inntil 5 etasjer kan også være tiltaksklasse 2. Likevel kan det hende at noe av arbeidet er spesielt vanskelig og må settes til tiltaksklasse 3.",
+                "For eksempel boligblokker og kontorbygg på 3-4 etasjer. Spesielt vanskelige og kritiske forhold kan komme i høyere tiltaksklasse, mens for mindre vanskelig arbeid kan tiltaksklassen reduseres.",
               "image": {
                 "url": "/images/tk2.svg",
                 "alt": "Større hus"
@@ -586,7 +586,7 @@
               "type": "Answer",
               "heading": "Tiltaksklasse 3",
               "text":
-                "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Det kan også være enkelte ansvarsområder i mindre bygninger som må settes i tiltaksklasse 3 fordi det er spesielt vanskelig.",
+                "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Gjelder også for enkelte ansvarsområder i mindre bygninger hvor arbeidet er spesielt vanskelig eller kritiske. For mindre vanskelig arbeid kan tiltaksklassen reduseres.",
               "image": {
                 "url": "/images/tk3.svg",
                 "alt": "Størst hus"
@@ -1602,7 +1602,7 @@
                       "id": "insufficientCompentency",
                       "type": "Text",
                       "warning": true,
-                      "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben"
+                      "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben"
                     },
                     {
                       "type": "Branch",
@@ -1628,7 +1628,7 @@
                               "id": "class1exception",
                               "type": "Text",
                               "text":
-                                "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
                             }
                           ]
                         },
@@ -1642,7 +1642,7 @@
                               "id": "failedButCanGoOn",
                               "type": "Text",
                               "text":
-                                "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å erklære ansvar for arbeidet som skal gjøres. Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
+                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
                             }
                           ]
                         }
