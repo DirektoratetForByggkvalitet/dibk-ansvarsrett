@@ -55,7 +55,12 @@
                   "fetchSG": true,
                   "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
                   "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
-                  "SGsource": "https://sgregister.dibk.no/api/enterprises/"
+                  "SGsource": "https://sgregister.dibk.no/api/enterprises/",
+                  "validator": {
+                    "object": "orgid",
+                    "pattern": "(\\d[\\s-]*){8}\\d",
+                    "error": "Må være gyldig org nr"
+                  }
                 }
               ]
             },
@@ -2197,7 +2202,8 @@
                         {
                           "id": "class1exceptionresult",
                           "type": "Result",
-                          "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "heading":
+                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
                             "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>"
                         }
@@ -2212,7 +2218,8 @@
                         {
                           "id": "failedButCanGoOnresult",
                           "type": "Result",
-                          "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "heading":
+                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
                             "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>"
                         }
