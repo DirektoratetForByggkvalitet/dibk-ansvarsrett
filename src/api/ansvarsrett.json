@@ -1678,6 +1678,46 @@
           "branches": [
             {
               "test": {
+                "field": "sgdata",
+                "operator": "eq",
+                "value": true
+              },
+              "children": [
+                {
+                  "id": "responsibility.area",
+                  "property": "responsibility.area",
+                  "type": "Radio",
+                  "heading": "Dekkes ansvarsområdet av firmaets sentrale godkjenning?",
+                  "options": [
+                    {
+                      "id": "responsibility.area.yes",
+                      "type": "Answer",
+                      "text": "Ja, hele ansvarsområdet er dekket",
+                      "value": "yes"
+                    },
+                    {
+                      "id": "responsibility.area.part",
+                      "type": "Answer",
+                      "heading": "Deler av ansvarsområdet er dekket",
+                      "value": "part"
+                    },
+                    {
+                      "id": "responsibility.area.no",
+                      "type": "Answer",
+                      "heading": "Nei, ansvarsområdet dekkes ikke av den sentrale godkjenningen",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
                 "field": "function",
                 "operator": "neq",
                 "value": "sok"
