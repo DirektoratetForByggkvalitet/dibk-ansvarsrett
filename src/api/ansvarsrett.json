@@ -46,7 +46,7 @@
                   "property": "orgnr",
                   "type": "FetchOrg",
                   "heading": "Organisasjonsnummer",
-                  "text": "Eksempel: 123 456 789",
+                  "text": "Eksempel: 123 456 789 eller 123456789",
                   "placeholder": "987 654 321",
                   "source":
                     "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
@@ -160,7 +160,7 @@
               "id": "competence.education",
               "property": "competence.education",
               "type": "Select",
-              "heading": "Utdanningsnivå",
+              "heading": "Relevant utdanning",
               "defaultOption": "Velg utdanningsnivå",
               "text":
                 "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften",
@@ -208,7 +208,7 @@
             },
             {
               "id": "possibleRoles",
-              "text": "Utdannings- og erfaringsnivået avgjør hvilken jobb firmaet ditt kan gjøre",
+              "text": "Firmaet ditt kan ha følgende funksjoner i prosjektet:",
               "type": "Table",
               "cells": [
                 [
@@ -481,7 +481,7 @@
           "type": "Radio",
           "heading": "Hvilken tiltaksklasse er jobben?",
           "text":
-            "<a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser</a> i byggesaksforskriften",
+            "Selv om et tiltak i utgangspunktet er i tiltaksklasse 2 eller 3, kan det være at deler av arbeidet likevel er i tiltaksklasse 1 eller 2. Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser</a> i byggesaksforskriften",
           "options": [
             {
               "id": "class.1",
@@ -2282,7 +2282,7 @@
                   "property": "summary.sok",
                   "type": "Text",
                   "printhide": true,
-                  "heading": "Er alt korrekt?",
+                  "heading": "Er alt korrekt? Skriv ut erklæringen!",
                   "text":
                     "<p>Da kan du skrive ut erklæringen, signere den, og sende den til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
@@ -2300,7 +2300,7 @@
                   "property": "end.correct",
                   "type": "Text",
                   "printhide": true,
-                  "heading": "Er alt korrekt?",
+                  "heading": "Er alt korrekt? Skriv ut erklæringen!",
                   "text":
                     "<p>Da kan du skrive ut erklæringen, signere den, og sende den videre til kommunen sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
