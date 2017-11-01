@@ -13,11 +13,11 @@ import store from './store';
 export default class App extends Component {
   static propTypes = {
     translations: PropTypes.object,
-  }
+  };
 
   static defaultProps = {
     translations: {},
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -40,9 +40,11 @@ export default class App extends Component {
   render() {
     if (this.state.intro) {
       return (
-        <StyleProvider>
-          <Intro close={this.closeIntro} />
-        </StyleProvider>
+        <Provider store={store}>
+          <StyleProvider>
+            <Intro close={this.closeIntro} />
+          </StyleProvider>
+        </Provider>
       );
     }
 

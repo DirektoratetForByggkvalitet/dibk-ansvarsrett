@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { Primitives } from 'losen';
 import { IntroMain } from '../primitives/IntroMain';
 
-export default function Intro({ close }) {
+function Intro({ close, data }) {
+  if (Object.keys(data).length !== 0) {
+    close();
+  }
   return (
     <Primitives.Wizard>
       <IntroMain>
@@ -36,10 +40,13 @@ export default function Intro({ close }) {
           </div>
         </section>
         <Primitives.Heading.H2 small>Usikker?</Primitives.Heading.H2>
-        <Primitives.Paragraphs.P>Snakk med ansvarlig søker eller oppdragsgiver.</Primitives.Paragraphs.P>
+        <Primitives.Paragraphs.P>
+          Snakk med ansvarlig søker eller oppdragsgiver.
+        </Primitives.Paragraphs.P>
         <Primitives.Heading.H2 small>Når veiviseren er fullført</Primitives.Heading.H2>
         <Primitives.Paragraphs.P>
-          Når du har fullført veiviseren får du vite om du kan erklære ansvar eller ikke. Du kan skrive ut og signere erklæringen, slik at du kan sende den til ansvarlig søker.
+          Når du har fullført veiviseren får du vite om du kan erklære ansvar eller ikke. Du kan
+          skrive ut og signere erklæringen, slik at du kan sende den til ansvarlig søker.
         </Primitives.Paragraphs.P>
         <Primitives.Button.MainButton onClick={() => close()}>
           Start veiviseren
@@ -51,4 +58,7 @@ export default function Intro({ close }) {
 
 Intro.propTypes = {
   close: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };
+
+export default connect(state => ({ data: state['@WIZARD_STATE'] }))(Intro);
