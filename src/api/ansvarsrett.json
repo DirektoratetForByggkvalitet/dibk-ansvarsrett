@@ -46,7 +46,7 @@
                   "property": "orgnr",
                   "type": "FetchOrg",
                   "heading": "Organisasjonsnummer",
-                  "text": "Eksempel: 123 456 789 eller 123456789",
+                  "text": "<p>Eksempel: 123 456 789 eller 123456789</p>",
                   "placeholder": "987 654 321",
                   "source":
                     "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
@@ -163,7 +163,7 @@
               "heading": "Relevant utdanning",
               "defaultOption": "Velg utdanningsnivå",
               "text":
-                "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften",
+                "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften</p>",
               "options": [
                 {
                   "id": "competence.education.none",
@@ -202,13 +202,13 @@
               "property": "competence.experience",
               "type": "Number",
               "text":
-                "<a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften",
+                "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften</p>",
               "heading": "År med relevant erfaring",
               "minimum": 0
             },
             {
               "id": "possibleRoles",
-              "text": "Firmaet ditt kan ha følgende funksjoner i prosjektet:",
+              "text": "<p>Firmaet ditt kan ha følgende funksjoner i prosjektet:</p>",
               "type": "Table",
               "cells": [
                 [
@@ -481,7 +481,7 @@
           "type": "Radio",
           "heading": "Hvilken tiltaksklasse er jobben?",
           "text":
-            "Selv om et tiltak i utgangspunktet er i tiltaksklasse 2 eller 3, kan det være at deler av arbeidet likevel er i tiltaksklasse 1 eller 2. Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser</a> i byggesaksforskriften",
+            "<p>Selv om et tiltak i utgangspunktet er i tiltaksklasse 2 eller 3, kan det være at deler av arbeidet likevel er i tiltaksklasse 1 eller 2. Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser i byggesaksforskriften.</a></p>",
           "options": [
             {
               "id": "class.1",
@@ -638,7 +638,7 @@
           "type": "Radio",
           "heading": "Hvilken funksjon har firmaet ditt i prosjektet?",
           "text":
-            "<a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften",
+            "<p><a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften.</p>",
           "options": [
             {
               "id": "function.sok",
@@ -1628,7 +1628,7 @@
                               "id": "class1exception",
                               "type": "Text",
                               "text":
-                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.</p><p>Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
                             }
                           ]
                         },
@@ -1687,7 +1687,8 @@
                   "id": "responsiblefirm",
                   "property": "responsiblefirm",
                   "type": "Input",
-                  "heading": "Hvilket firma er ansvarlig søker?"
+                  "heading": "Hvilket firma er ansvarlig søker?",
+                  "text": "<p>Skriv inn  navnet på firmaet.</p>"
                 }
               ]
             }
@@ -1797,7 +1798,7 @@
               "property": "where.address",
               "type": "Input",
               "heading": "Gateadresse",
-              "text": "Fylles ut hvis eiendommen har gateadresse",
+              "text": "<p>Fylles ut hvis eiendommen har gateadresse</p>",
               "optional": true
             }
           ]
@@ -2156,9 +2157,9 @@
                         {
                           "id": "class1exceptionresult",
                           "type": "Result",
-                          "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben",
+                          "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
-                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>"
                         }
                       ]
                     },
@@ -2171,7 +2172,7 @@
                         {
                           "id": "failedButCanGoOnresult",
                           "type": "Result",
-                          "heading": "Firmaet ditt har ikke kompetanse til å gjøre jobben",
+                          "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
                             "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>"
                         }
@@ -2191,7 +2192,7 @@
       "heading": "Firmaet ditt kan erklære ansvar",
       "errorheading": "Du har ikke svart på alle spørsmålene",
       "lead":
-        "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter. og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
+        "<p><strong>Se over og fullfør</strong><br />Les nøye gjennom erklæringen før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>",
       "errorlead":
         "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
       "exporter": "dataExport",
