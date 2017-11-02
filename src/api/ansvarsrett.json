@@ -20,7 +20,7 @@
             {
               "id": "companytype.norwegian",
               "type": "Answer",
-              "heading": "Et norsk firma",
+              "text": "Et norsk firma",
               "value": "norwegian"
             },
             {
@@ -1711,7 +1711,7 @@
                     {
                       "id": "responsibility.area.yes",
                       "type": "Answer",
-                      "heading": "Ja, hele ansvarsområdet er dekket",
+                      "text": "Ja, hele ansvarsområdet er dekket",
                       "value": "yes"
                     },
                     {
@@ -2378,15 +2378,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "end",
-          "property": "end",
-          "type": "Text",
-          "printhide": true,
-          "heading": "For å sende inn erklæringen",
-          "text":
-            "<p>Erklæringen er nå fylt ut og klar til å sendes inn. Du må selv skrive ut erklæringen og sende den til (adresse her!)</p>"
         }
       ]
     }
