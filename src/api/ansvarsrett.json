@@ -1608,12 +1608,6 @@
                   "type": "Error",
                   "children": [
                     {
-                      "id": "insufficientCompentency",
-                      "type": "Text",
-                      "warning": true,
-                      "heading": "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben"
-                    },
-                    {
                       "type": "Branch",
                       "branches": [
                         {
@@ -1634,6 +1628,13 @@
                           },
                           "children": [
                             {
+                              "id": "insufficientCompentency",
+                              "type": "Text",
+                              "warning": true,
+                              "heading":
+                                "Firmaet ditt kan ikke erklære ansvar men kan søke kommunenen om ansvarsrett"
+                            },
+                            {
                               "id": "class1exception",
                               "type": "Text",
                               "text":
@@ -1647,6 +1648,13 @@
                             "operator": "required"
                           },
                           "children": [
+                            {
+                              "id": "insufficientCompentency",
+                              "type": "Text",
+                              "warning": true,
+                              "heading":
+                                "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben"
+                            },
                             {
                               "id": "failedButCanGoOn",
                               "type": "Text",
