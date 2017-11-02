@@ -55,11 +55,13 @@
                   "fetchSG": true,
                   "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
                   "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
+                  "invalidOrg":
+                    "Vi fant ikke det organisasjonsnummeret. Kontroller at du har skrevet det riktig.",
                   "SGsource": "https://sgregister.dibk.no/api/enterprises/",
                   "validator": {
                     "object": "orgid",
                     "pattern": "(\\d[\\s-]*){8}\\d",
-                    "error": "Må være gyldig org nr"
+                    "error": "Må være gyldig organisasjonsnummer"
                   }
                 }
               ]
