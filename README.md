@@ -28,3 +28,11 @@ Follow the instructions for:
 
 To build the production bundle you run `yarn run build`.
 Then you are ready to type `yarn deploy` :sparkles:
+
+## Deploy to production
+
+First you need access to the code. It is hosted at [DIBK Bitbucket](https://bitbucket.org/dibk/dibk-web).
+The Javascript file that this project produces after `npm run build` in `/build/static/js/main.numbers.js` needs to be moved over to the DIBK-web project.
+The path to where the file should live is  `DiBK.Presentation\modules\veivisere`.
+Commit it to the branch `Veivisere` and let Creuna (Hege Seilen) know to deploy the new code.
+The pictures and text changes are uploaded to Episerver
