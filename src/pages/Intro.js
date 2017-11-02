@@ -48,7 +48,7 @@ function Intro({ close, data }) {
           Når du har fullført veiviseren får du vite om du kan erklære ansvar eller ikke. Du kan
           skrive ut og signere erklæringen, slik at du kan sende den til ansvarlig søker.
         </Primitives.Paragraphs.P>
-        <Primitives.Button.MainButton onClick={() => close()}>
+        <Primitives.Button.MainButton type="button" onClick={() => close()}>
           Start veiviseren
         </Primitives.Button.MainButton>
       </IntroMain>
