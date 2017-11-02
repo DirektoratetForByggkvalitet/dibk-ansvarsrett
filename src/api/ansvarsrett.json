@@ -987,7 +987,8 @@
                           },
                           {
                             "field": "competence.education",
-                            "operator": "required"
+                            "operator": "gte",
+                            "value": 1
                           }
                         ]
                       },
