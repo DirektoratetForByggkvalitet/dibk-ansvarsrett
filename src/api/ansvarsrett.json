@@ -20,7 +20,7 @@
             {
               "id": "companytype.norwegian",
               "type": "Answer",
-              "text": "Et norsk firma",
+              "heading": "Et norsk firma",
               "value": "norwegian"
             },
             {
@@ -1711,7 +1711,7 @@
                     {
                       "id": "responsibility.area.yes",
                       "type": "Answer",
-                      "text": "Ja, hele ansvarsområdet er dekket",
+                      "heading": "Ja, hele ansvarsområdet er dekket",
                       "value": "yes"
                     },
                     {
