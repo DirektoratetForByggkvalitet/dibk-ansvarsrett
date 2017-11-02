@@ -2204,6 +2204,10 @@
                         {
                           "id": "class1exceptionresult",
                           "type": "Result",
+                          "errorheading":
+                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "errorlead":
+                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>",
                           "heading":
                             "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
@@ -2220,6 +2224,10 @@
                         {
                           "id": "failedButCanGoOnresult",
                           "type": "Result",
+                          "errorheading":
+                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "errorlead":
+                            "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>",
                           "heading":
                             "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
