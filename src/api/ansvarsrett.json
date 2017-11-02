@@ -1604,6 +1604,7 @@
               "children": [
                 {
                   "id": "competencyError",
+                  "property": "competencyError",
                   "type": "Error",
                   "children": [
                     {
@@ -2180,6 +2181,7 @@
           "children": [
             {
               "id": "competencyError",
+              "property": "competencyError",
               "type": "Error",
               "children": [
                 {
