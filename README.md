@@ -31,8 +31,11 @@ Then you are ready to type `yarn deploy` :sparkles:
 
 ## Deploy to production
 
-First you need access to the code. It is hosted at [DIBK Bitbucket](https://bitbucket.org/dibk/dibk-web).  
-The Javascript file that this project produces after `npm run build` in `/build/static/js/main.numbers.js` needs to be moved over to the DIBK-web project.  
-The path to where the file should live is  `DiBK.Presentation\modules\veivisere`.  
-Commit it to the branch `Veivisere` and let Creuna (Hege Seilen) know to deploy the new code.  
+First build this project `npm run build` (make sure you are using latest version of [losen](https://github.com/netliferesearch/losen)).  
+Then navigate to the wizard page in [DIBK staging](http://azr-dibkstaging.azurewebsites.net/). You will find the page in the icon top left and `Forside/Tests/Veiviser 1`
+Select folder icon (folder top right) then press "Media" (between "Blokker" and "Skjemaer").
+Scroll all the way to the bottom and chose "For denne Side".
+Upload the Javascript bundle found in `build/static` after the build step.
+Then press the menu icon (last icon row right) and update the file in "Javascriptfil for veiviseren" to the file you just uploaded.
+The last step is to publish the page.
 The pictures and text changes are uploaded to Episerver.
