@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const IntroMain = styled.main`
+  display: block;
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
