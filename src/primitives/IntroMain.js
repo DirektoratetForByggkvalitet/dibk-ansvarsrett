@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const IntroMain = styled.main`
   margin: 0 auto;
   max-width: 900px;
+  width: 100%;
   padding: 75px 20px 200px;
   line-height: 1.6;
   font-weight: 300;
