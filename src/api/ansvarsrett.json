@@ -2332,6 +2332,14 @@
       "exporter": "dataExport",
       "children": [
         {
+          "id": "statement",
+          "property": "statement",
+          "type": "Text",
+          "printonly": true,
+          "text":
+            "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />&ndash; Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br />&ndash; Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
+        },
+        {
           "type": "Branch",
           "branches": [
             {
@@ -2347,7 +2355,7 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<input type=\"checkbox\" />Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3."
+                    "<strong>Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3.</strong>"
                 }
               ]
             },
@@ -2364,7 +2372,7 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<input type=\"checkbox\" />Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5."
+                    "<strong>Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5.</strong>"
                 }
               ]
             },
@@ -2381,19 +2389,11 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<input type=\"checkbox\" />Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4."
+                    "<strong>Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4.</strong>"
                 }
               ]
             }
           ]
-        },
-        {
-          "id": "statement",
-          "property": "statement",
-          "type": "Text",
-          "printonly": true,
-          "text":
-            "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />1) Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br /> 2) Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
         },
         {
           "id": "signature",
