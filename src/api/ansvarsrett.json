@@ -175,7 +175,7 @@
                 {
                   "id": "competence.education.none",
                   "type": "Answer",
-                  "heading": "Ingen",
+                  "heading": "Annet",
                   "value": 0
                 },
                 {
@@ -1699,7 +1699,9 @@
                   "id": "competence.additional",
                   "property": "competence.additional",
                   "type": "Textarea",
-                  "heading": "Beskriv hvilken utdannelse eventuelt kurs som er relevante og hvilken relevant erfaring du har"
+                  "heading": "Beskriv hvilken erfaring, utdanning og/eller kurs firmaet ditt har som er relevant for prosjektet",
+                  "text":
+                  "<p>Kommunen vil ta dette i betraktning når de behandler søknaden din.</p>"
                 }
               ]
             }
@@ -2314,13 +2316,127 @@
                           "id": "class1exceptionresult",
                           "type": "Result",
                           "errorheading":
-                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                            "Du har ikke svart på alle spørsmålene",
                           "errorlead":
-                          "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>",
+                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.<p></p>Gjennomfør resten av stegene i veiviseren og sørg for at du har fylt ut riktig informasjon. Du vil da kunne skrive ut en ferdig utfylt søknad nederst på denne siden.</p>",
                           "heading":
-                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                            "Firmaet ditt kan søke om ansvarsrett",
                           "lead":
-                          "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>"
+                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.</p><p><strong>Se over og skriv ut søknaden</strong><br />Les nøye gjennom søknaden før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene. I oppsummeringen under kan du klikke deg inn på hvert steg i veiviseren for å legge til og endre svarene dine. Når du har forsikret deg om at alt stemmer, kan du skrive ut søknaden nederst på siden.</p>",
+                          "children": [
+                              {
+                                "id": "statement",
+                                "property": "statement",
+                                "type": "Text",
+                                "printonly": true,
+                                "text":
+                                  "<strong>Ved å sende inn denne søknaden bekrefter du at:</strong><br />&ndash; Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br />&ndash; Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11.<br />&ndash; Opplysningene gitt i denne søknaden er korrekte, og firmaet har rutiner for kvalitetssikring slik det står i SAK10 § 10-1 første ledd."
+                              },
+                              {
+                                "type": "Branch",
+                                "branches": [
+                                  {
+                                    "test": {
+                                      "field": "function",
+                                      "operator": "eq",
+                                      "value": "pro"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "responsable",
+                                        "property": "responsable",
+                                        "type": "Text",
+                                        "printonly": true,
+                                        "text":
+                                          "<strong>Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3.</strong>"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "test": {
+                                      "field": "function",
+                                      "operator": "eq",
+                                      "value": "krp"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "responsable",
+                                        "property": "conformity.type",
+                                        "type": "Text",
+                                        "printonly": true,
+                                        "text":
+                                          "<strong>Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5.</strong>"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "test": {
+                                      "field": "function",
+                                      "operator": "eq",
+                                      "value": "utf"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "responsable",
+                                        "property": "conformity.type",
+                                        "type": "Text",
+                                        "printonly": true,
+                                        "text":
+                                          "<strong>Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4.</strong>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "signature",
+                                "property": "signature",
+                                "type": "Signature",
+                                "optional": true,
+                                "printonly": true
+                              },
+                              {
+                                "type": "Branch",
+                                "branches": [
+                                  {
+                                    "test": {
+                                      "field": "function",
+                                      "operator": "neq",
+                                      "value": "sok"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "summary.sok",
+                                        "property": "summary.sok",
+                                        "type": "Text",
+                                        "printhide": true,
+                                        "heading": "Er alt korrekt? Skriv ut søknaden!",
+                                        "text":
+                                          "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende videre til ansvarlig søker.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i SAK10 § 10-1 første ledd.</strong></p>"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "test": {
+                                      "field": "function",
+                                      "operator": "eq",
+                                      "value": "sok"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "end.correct",
+                                        "property": "end.correct",
+                                        "type": "Text",
+                                        "printhide": true,
+                                        "heading": "Er alt korrekt? Skriv ut søknaden!",
+                                        "text":
+                                          "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende inn sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i SAK10 § 10-1 første ledd.</strong></p>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
                         }
                       ]
                     },
