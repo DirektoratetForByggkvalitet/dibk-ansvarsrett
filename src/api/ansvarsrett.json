@@ -1608,6 +1608,7 @@
                   "id": "competencyError",
                   "property": "competencyError",
                   "type": "Error",
+                  "simple": true,
                   "children": [
                     {
                       "type": "Branch",
@@ -1634,13 +1635,18 @@
                               "type": "Text",
                               "warning": true,
                               "heading":
-                                "Firmaet ditt kan ikke erklære ansvar men kan søke kommunen om ansvarsrett"
+                                "Firmaet ditt kan ikke erklære ansvar, men kan søke kommunen om ansvarsrett"
                             },
                             {
-                              "id": "class1exception",
+                              "id": "failedButCanGoOn",
                               "type": "Text",
-                              "text":
-                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres.</p><p>Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet.</p>"
+                              "text": "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
+                            },
+                            {
+                              "id": "competence.additional",
+                              "property": "competence.additional",
+                              "type": "Textarea",
+                              "heading": "Utdyp hvorfor firmaet bør få ansvarsrett for dette prosjektet"
                             }
                           ]
                         },
