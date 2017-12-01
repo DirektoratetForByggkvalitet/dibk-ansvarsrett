@@ -1641,12 +1641,6 @@
                               "id": "failedButCanGoOn",
                               "type": "Text",
                               "text": "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
-                            },
-                            {
-                              "id": "competence.additional",
-                              "property": "competence.additional",
-                              "type": "Textarea",
-                              "heading": "Beskriv hvilken utdannelse eventuelt kurs som er relevante og hvilken relevant erfaring du har"
                             }
                           ]
                         },
@@ -1678,6 +1672,12 @@
               ]
             }
           ]
+        },
+        {
+          "id": "competence.additional",
+          "property": "competence.additional",
+          "type": "Textarea",
+          "heading": "Beskriv hvilken utdannelse eventuelt kurs som er relevante og hvilken relevant erfaring du har"
         }
       ]
     },
