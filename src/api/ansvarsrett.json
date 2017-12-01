@@ -9,7 +9,7 @@
       "type": "Page",
       "heading": "Informasjon om firmaet ditt",
       "lead":
-        "<p>Dersom firmaet ditt har norsk organisasjonsnummer vil informasjon om firmaet ditt hentes fra Brønnøysundregistrene.</p><p>Representerer du et utenlandsk firma, må du fylle inn informasjonen manuelt.</p>",
+      "<p>Dersom firmaet ditt har norsk organisasjonsnummer vil informasjon om firmaet ditt hentes fra Brønnøysundregistrene.</p><p>Representerer du et utenlandsk firma, må du fylle inn informasjonen manuelt.</p>",
       "children": [
         {
           "id": "companytype",
@@ -49,14 +49,14 @@
                   "text": "<p>Eksempel: 123 456 789 eller 123456789</p>",
                   "placeholder": "987 654 321",
                   "source":
-                    "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
+                  "https://data.brreg.no/enhetsregisteret/enhet.json?page=0&size=30&$filter=organisasjonsnummer+eq+",
                   "information":
-                    "Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href=\"https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/\">Samordnet registermelding</a> i Altinn før du fortsetter.",
+                  "Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href=\"https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/\">Samordnet registermelding</a> i Altinn før du fortsetter.",
                   "fetchSG": true,
                   "SGheading": "${name} er registrert med sentral godkjenning for følgende områder",
                   "invalidapproval": "Vi fant ikke godkjenningen din i systemet vårt",
                   "invalidOrg":
-                    "Vi fant ikke det organisasjonsnummeret. Kontroller at du har skrevet det riktig.",
+                  "Vi fant ikke det organisasjonsnummeret. Kontroller at du har skrevet det riktig.",
                   "SGsource": "https://sgregister.dibk.no/api/enterprises/",
                   "validator": {
                     "object": "orgid",
@@ -154,7 +154,7 @@
       "type": "Page",
       "heading": "Har firmaet rett kompetanse til å gjøre jobben?",
       "lead":
-        "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p>",
+      "<p>For å kunne erklære ansvarsrett for en jobb, må firmaet ditt ha tilstrekkelig formell kompetanse for jobben som skal gjøres. Dette er en kombinasjon av utdannelse og arbeidserfaring.</p>",
       "children": [
         {
           "id": "competence",
@@ -170,7 +170,7 @@
               "heading": "Relevant utdanning",
               "defaultOption": "Velg utdanningsnivå",
               "text":
-                "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften</p>",
+              "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften</p>",
               "options": [
                 {
                   "id": "competence.education.none",
@@ -209,7 +209,7 @@
               "property": "competence.experience",
               "type": "Number",
               "text":
-                "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften</p>",
+              "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften</p>",
               "heading": "År med relevant erfaring",
               "minimum": 0
             },
@@ -489,14 +489,14 @@
           "type": "Radio",
           "heading": "Hvilken tiltaksklasse er jobben?",
           "text":
-            "<p>Selv om et tiltak i utgangspunktet er i tiltaksklasse 2 eller 3, kan det være at deler av arbeidet likevel er i tiltaksklasse 1 eller 2. Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser i byggesaksforskriften.</a></p>",
+          "<p>Selv om et tiltak i utgangspunktet er i tiltaksklasse 2 eller 3, kan det være at deler av arbeidet likevel er i tiltaksklasse 1 eller 2. Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser i byggesaksforskriften.</a></p>",
           "options": [
             {
               "id": "class.1",
               "type": "Answer",
               "heading": "Tiltaksklasse 1",
               "text":
-                "Alt arbeid med eneboliger, tomannsboliger og rekkehus er normalt tiltaksklasse 1. Spesielt vanskelige forhold kan komme i høyere tiltaksklasse. I større bygninger kan noe av arbeidene som ikke er kompliserte settes i tiltaksklasse 1.",
+              "Alt arbeid med eneboliger, tomannsboliger og rekkehus er normalt tiltaksklasse 1. Spesielt vanskelige forhold kan komme i høyere tiltaksklasse. I større bygninger kan noe av arbeidene som ikke er kompliserte settes i tiltaksklasse 1.",
               "image": {
                 "url": "/images/tk1.svg",
                 "alt": "Lite hus"
@@ -546,7 +546,7 @@
               "type": "Answer",
               "heading": "Tiltaksklasse 2",
               "text":
-                "For eksempel boligblokker og kontorbygg på 3-4 etasjer. Spesielt vanskelige og kritiske forhold kan komme i høyere tiltaksklasse, mens for mindre vanskelig arbeid kan tiltaksklassen reduseres.",
+              "For eksempel boligblokker og kontorbygg på 3-4 etasjer. Spesielt vanskelige og kritiske forhold kan komme i høyere tiltaksklasse, mens for mindre vanskelig arbeid kan tiltaksklassen reduseres.",
               "image": {
                 "url": "/images/tk2.svg",
                 "alt": "Større hus"
@@ -595,7 +595,7 @@
               "type": "Answer",
               "heading": "Tiltaksklasse 3",
               "text":
-                "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Gjelder også for enkelte ansvarsområder i mindre bygninger hvor arbeidet er spesielt vanskelig eller kritiske. For mindre vanskelig arbeid kan tiltaksklassen reduseres.",
+              "Arbeid med store og kompliserte bygninger er i tiltaksklasse 3. Gjelder også for enkelte ansvarsområder i mindre bygninger hvor arbeidet er spesielt vanskelig eller kritiske. For mindre vanskelig arbeid kan tiltaksklassen reduseres.",
               "image": {
                 "url": "/images/tk3.svg",
                 "alt": "Størst hus"
@@ -647,7 +647,7 @@
           "type": "Radio",
           "heading": "Hvilken funksjon har firmaet ditt i prosjektet?",
           "text":
-            "<p><a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften.</p>",
+          "<p><a href=\"https://dibk.no/byggeregler/sak/3/12/innledning/\">Les mer om hvilket ansvar du har</a> som ansvarlig søker, prosjekterende, utførende og kontrollerende i byggesaksforskriften.</p>",
           "options": [
             {
               "id": "function.sok",
@@ -1605,63 +1605,63 @@
               },
               "children": [
                 {
-                  "id": "competencyError",
-                  "property": "competencyError",
-                  "type": "Error",
-                  "simple": true,
-                  "children": [
+                  "type": "Branch",
+                  "branches": [
                     {
-                      "type": "Branch",
-                      "branches": [
-                        {
-                          "test": {
-                            "type": "and",
-                            "clauses": [
-                              {
-                                "field": "class",
-                                "operator": "eq",
-                                "value": "tiltaksklasse1"
-                              },
-                              {
-                                "field": "function",
-                                "operator": "neq",
-                                "value": "krp"
-                              }
-                            ]
+                      "test": {
+                        "type": "and",
+                        "clauses": [
+                          {
+                            "field": "class",
+                            "operator": "eq",
+                            "value": "tiltaksklasse1"
                           },
-                          "children": [
-                            {
-                              "id": "insufficientCompentency",
-                              "type": "Text",
-                              "warning": true,
-                              "heading":
-                                "Firmaet ditt kan ikke erklære ansvar, men kan søke kommunen om ansvarsrett"
-                            },
-                            {
-                              "id": "failedButCanGoOn",
-                              "type": "Text",
-                              "text": "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
-                            }
-                          ]
+                          {
+                            "field": "function",
+                            "operator": "neq",
+                            "value": "krp"
+                          }
+                        ]
+                      },
+                      "children": [
+                        {
+                          "id": "insufficientCompentency",
+                          "type": "Text",
+                          "warning": true,
+                          "heading":
+                          "Firmaet ditt kan ikke erklære ansvar, men kan søke kommunen om ansvarsrett"
                         },
                         {
-                          "test": {
-                            "field": "class",
-                            "operator": "required"
-                          },
+                          "id": "failedButCanGoOn",
+                          "type": "Text",
+                          "text": "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "test": {
+                        "field": "class",
+                        "operator": "required"
+                      },
+                      "children": [  
+                        {
+                          "id": "competencyError",
+                          "property": "competencyError",
+                          "type": "Error",
+                          "simple": true,
                           "children": [
                             {
                               "id": "insufficientCompentency",
                               "type": "Text",
                               "warning": true,
                               "heading":
-                                "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben"
+                              "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben"
                             },
                             {
                               "id": "failedButCanGoOn",
                               "type": "Text",
                               "text":
-                                "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
+                              "<p>Du kan fortsatt gå videre i veiviseren, men du vil ikke kunne erklære ansvar for arbeidet som skal gjøres. Vil du vite mer om kravene? <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a></p>"
                             }
                           ]
                         }
@@ -1669,6 +1669,8 @@
                     }
                   ]
                 }
+
+
               ]
             }
           ]
@@ -1710,7 +1712,7 @@
       "type": "Page",
       "heading": "Hva skal firmaet ta ansvar for?",
       "lead":
-        "Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ",
+      "Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ",
       "children": [
         {
           "id": "responsibility.description",
@@ -1720,7 +1722,7 @@
           "information": "Husk at det du beskriver her vil firmaet bli stilt til ansvar for",
           "summary": "Se eksempler",
           "details":
-            "<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
+          "<h3>Grunnarbeider</h3><p>Graving og sprengning av byggegrop, kulting og komprimering, legging av radonsperre, samt graving og gjenfylling av grøfter.</p><h3>Plassering</h3><p>Utstikking av høyde og plan før graving. Kvalitetssikre plassering av såle og grunnmur.</p><h3>Arkitektur</h3><p>Prosjektering av situasjonsplan, visuell utforming og terrengtilpasning, innvendig planløsning.</p>"
         },
         {
           "type": "Branch",
@@ -1800,7 +1802,7 @@
               "type": "Page",
               "heading": "Når regner du med å sende samsvarserklæring?",
               "lead":
-                "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
+              "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
               "children": [
                 {
                   "id": "conformity.type",
@@ -1813,7 +1815,7 @@
                       "type": "Answer",
                       "heading": "Midlertidig brukstillatelse",
                       "text":
-                        "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk. Det er vanlig at samsvarserklæringer på utførelse foreligger her.",
+                      "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk. Det er vanlig at samsvarserklæringer på utførelse foreligger her.",
                       "value": "3",
                       "image": {
                         "url": "/images/samsvar3.svg",
@@ -1825,7 +1827,7 @@
                       "type": "Answer",
                       "heading": "Ferdigattest",
                       "text":
-                        "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”. Før du får ferdigattest må samsvarserklæringer som erklærer at arbeidet er helt ferdig foreligge for alle ansvarsområder. Er disse allerede sendt, trenger du ikke sende de på nytt.",
+                      "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”. Før du får ferdigattest må samsvarserklæringer som erklærer at arbeidet er helt ferdig foreligge for alle ansvarsområder. Er disse allerede sendt, trenger du ikke sende de på nytt.",
                       "value": "4",
                       "image": {
                         "url": "/images/samsvar4.svg",
@@ -1850,7 +1852,7 @@
               "type": "Page",
               "heading": "Når regner du med å sende samsvarserklæring?",
               "lead":
-                "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
+              "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
               "children": [
                 {
                   "id": "conformity.type",
@@ -1863,7 +1865,7 @@
                       "type": "Answer",
                       "heading": "Rammetillatelse",
                       "text":
-                        "Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre. Det er sjelden at du trenger å sende inn samsvarserklæring ved rammetillatelse",
+                      "Det første steget i en byggesak er en søknad om rammetillatelse. Her beskrives det hva man skal bygge, endre eller utbedre. Det er sjelden at du trenger å sende inn samsvarserklæring ved rammetillatelse",
                       "value": "1",
                       "image": {
                         "url": "/images/samsvar1.svg",
@@ -1875,7 +1877,7 @@
                       "type": "Answer",
                       "heading": "Igangsettelse",
                       "text":
-                        "Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne! De fleste samsvarserklæringer for prosjektering bør være på plass ved denne søknaden.",
+                      "Dette er en søknad om hvorvidt man kan begynne selve byggearbeidet. Det er viktig å ikke ta ett eneste spadetak før man har fått godkjent denne! De fleste samsvarserklæringer for prosjektering bør være på plass ved denne søknaden.",
                       "value": "2",
                       "image": {
                         "url": "/images/samsvar2.svg",
@@ -1887,7 +1889,7 @@
                       "type": "Answer",
                       "heading": "Midlertidig brukstillatelse",
                       "text":
-                        "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk. Det er vanlig at samsvarserklæringer på utførelse foreligger her.",
+                      "Dette er en søknad om tillatelse til å bruke et byggverk midlertidig, selv om det ikke er helt ferdig. Det må allikevel gjenstå såpass lite at kommunen må finne det forsvarlig å kunne ta det i bruk. Det er vanlig at samsvarserklæringer på utførelse foreligger her.",
                       "value": "3",
                       "image": {
                         "url": "/images/samsvar3.svg",
@@ -1899,7 +1901,7 @@
                       "type": "Answer",
                       "heading": "Ferdigattest",
                       "text":
-                        "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”. Før du får ferdigattest må samsvarserklæringer som erklærer at arbeidet er helt ferdig foreligge for alle ansvarsområder. Er disse allerede sendt, trenger du ikke sende de på nytt.",
+                      "Alle tiltak du må søke om, må også avsluttes med en ferdigattest som du får av kommunen. En ferdigattest skal foreligge før bygget tas i bruk, ellers må man søke om en “midlertidig brukstillatelse”. Før du får ferdigattest må samsvarserklæringer som erklærer at arbeidet er helt ferdig foreligge for alle ansvarsområder. Er disse allerede sendt, trenger du ikke sende de på nytt.",
                       "value": "4",
                       "image": {
                         "url": "/images/samsvar4.svg",
@@ -1919,7 +1921,7 @@
       "type": "Page",
       "heading": "Informasjon om byggeplassen",
       "lead":
-        "Du må fylle ut denne informasjonen slik at det blir enkelt å knytte erklæringen til riktig byggesak.",
+      "Du må fylle ut denne informasjonen slik at det blir enkelt å knytte erklæringen til riktig byggesak.",
       "children": [
         {
           "id": "where",
@@ -2312,13 +2314,13 @@
                           "id": "class1exceptionresult",
                           "type": "Result",
                           "errorheading":
-                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "errorlead":
-                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>",
+                          "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>",
                           "heading":
-                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
-                            "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>"
+                          "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres.<br />Har dere lang og god relevant praksis? Da kan dere søke kommunen om ansvarsrett.</p><p><strong>Hvordan søker jeg kommunen om ansvarsrett?</strong><br />Send et brev til kommunen hvor dere redegjør for kompetanse og erfaringen til firmaet. Husk å signere brevet. Du kan legge ved en utskrift av denne siden som en del av dokumentasjonen.</p>"
                         }
                       ]
                     },
@@ -2332,13 +2334,13 @@
                           "id": "failedButCanGoOnresult",
                           "type": "Result",
                           "errorheading":
-                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "errorlead":
-                            "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>",
+                          "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>",
                           "heading":
-                            "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
+                          "Firmaet ditt har ikke tilstrekkelig kompetanse til å gjøre jobben",
                           "lead":
-                            "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>"
+                          "Dette skyldes at arbeidet som skal gjøres krever mer relevant utdanning og/eller erfaring enn det firmaet ditt har. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-3/\">Les mer om krav til utdanning og praksis på DiBKs nettsider.</a>"
                         }
                       ]
                     }
@@ -2356,9 +2358,9 @@
       "heading": "Firmaet ditt kan erklære ansvar",
       "errorheading": "Du har ikke svart på alle spørsmålene",
       "lead":
-        "<p><strong>Se over og skriv ut</strong><br />Les nøye gjennom erklæringen før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene. I oppsummeringen under kan du klikke deg inn på hvert steg i veiviseren for å legge til og endre svarene dine. Når du har forsikret deg om at alt stemmer, kan du skrive ut erklæringen nederst på siden.</p>",
+      "<p><strong>Se over og skriv ut</strong><br />Les nøye gjennom erklæringen før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene. I oppsummeringen under kan du klikke deg inn på hvert steg i veiviseren for å legge til og endre svarene dine. Når du har forsikret deg om at alt stemmer, kan du skrive ut erklæringen nederst på siden.</p>",
       "errorlead":
-        "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
+      "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
       "exporter": "dataExport",
       "children": [
         {
@@ -2367,7 +2369,7 @@
           "type": "Text",
           "printonly": true,
           "text":
-            "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />&ndash; Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br />&ndash; Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
+          "<strong>Ved å sende inn denne erklæringen bekrefter du at:</strong><br />&ndash; Foretaket er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap. 32 og at det kan medføre reaksjoner dersom det gis uriktige opplysninger.<br />&ndash; Foretaket forplikter seg til å stille med nødvendig kompetanse i tiltaket, jf. SAK10 kap. 10 og 11."
         },
         {
           "type": "Branch",
@@ -2385,7 +2387,7 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<strong>Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3.</strong>"
+                  "<strong>Ansvarlig prosjekterende erklærer at prosjekteringen skal være planlagt, gjennomført og kvalitetssikret i henhold til plan- og bygningsloven jf. SAK10 §12-3.</strong>"
                 }
               ]
             },
@@ -2402,7 +2404,7 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<strong>Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5.</strong>"
+                  "<strong>Ansvarlig kontrollerende erklærer uavhengighet, jf. SAK10 § 14-1, og vil redegjøre for endringer som kan påvirke uavhengigheten jf. SAK10 §12-5.</strong>"
                 }
               ]
             },
@@ -2419,7 +2421,7 @@
                   "type": "Text",
                   "printonly": true,
                   "text":
-                    "<strong>Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4.</strong>"
+                  "<strong>Ansvarlig utførende erklærer at arbeidet ikke skal starte før det foreligger kvalitetssikret produksjonsunderlag for respektive del av utførelsen jf SAK10 § 12-4.</strong>"
                 }
               ]
             }
@@ -2449,7 +2451,7 @@
                   "printhide": true,
                   "heading": "Er alt korrekt? Skriv ut erklæringen!",
                   "text":
-                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
+                  "<p>Da kan du skrive ut erklæringen, signere den, og sende den til ansvarlig søker. Ansvarlig søker vil sende erklæringen videre til kommunen sammen med sin gjennomføringsplan.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
               ]
             },
@@ -2467,7 +2469,7 @@
                   "printhide": true,
                   "heading": "Er alt korrekt? Skriv ut erklæringen!",
                   "text":
-                    "<p>Da kan du skrive ut erklæringen, signere den, og sende den videre til kommunen sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
+                  "<p>Da kan du skrive ut erklæringen, signere den, og sende den videre til kommunen sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne erklæringen!</strong></p>"
                 }
               ]
             }
