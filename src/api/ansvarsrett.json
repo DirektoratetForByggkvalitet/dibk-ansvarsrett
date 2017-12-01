@@ -1641,6 +1641,14 @@
                               "id": "failedButCanGoOn",
                               "type": "Text",
                               "text": "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
+                            },
+                            {
+                              "id": "competence.additional",
+                              "property": "competence.additional",
+                              "type": "Textarea",
+                              "heading": "Beskriv hvilken erfaring, utdanning og/eller kurs firmaet ditt har som er relevant for prosjektet",
+                              "text":
+                              "<p>Kommunen vil ta dette i betraktning når de behandler søknaden din.</p>"
                             }
                           ]
                         },
@@ -1668,38 +1676,6 @@
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "Branch",
-          "branches": [
-            {
-              "test": {
-                "type": "and",
-                "clauses": [
-                  {
-                    "field": "class",
-                    "operator": "eq",
-                    "value": "tiltaksklasse1"
-                  },
-                  {
-                    "field": "function",
-                    "operator": "neq",
-                    "value": "krp"
-                  }
-                ]
-              },
-              "children": [
-                {
-                  "id": "competence.additional",
-                  "property": "competence.additional",
-                  "type": "Textarea",
-                  "heading": "Beskriv hvilken erfaring, utdanning og/eller kurs firmaet ditt har som er relevant for prosjektet",
-                  "text":
-                  "<p>Kommunen vil ta dette i betraktning når de behandler søknaden din.</p>"
                 }
               ]
             }
