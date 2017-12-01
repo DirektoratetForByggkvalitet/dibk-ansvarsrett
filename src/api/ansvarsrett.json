@@ -1645,7 +1645,7 @@
                                   "id": "failedButCanGoOn",
                                   "type": "Text",
                                   "text":
-                                    "<p>Mangler firmaet ditt formell kompetanse til å erklære ansvar? Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse.</p><p>I søknaden må det redegjøres for den kompetansen og erfaringen firmaet har som er relevant for prosjektet.</p>"
+                                    "<p>Firmaet ditt mangler formell kompetanse til å erklære ansvar. Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse til å gjøre jobben.</p>"
                                 },
                                 {
                                   "id": "competence.additional",
@@ -2401,7 +2401,7 @@
                                       "printhide": true,
                                       "heading": "Er alt korrekt? Skriv ut søknaden!",
                                       "text":
-                                        "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende videre til ansvarlig søker.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i SAK10 § 10-1 første ledd.</strong></p>"
+                                        "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende videre til ansvarlig søker.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i <a href=\"https://dibk.no/byggeregler/sak/3/10/10-1\"/>SAK10 § 10-1 første ledd</a>.</strong></p>"
                                     }
                                   ]
                                 },
@@ -2419,7 +2419,7 @@
                                       "printhide": true,
                                       "heading": "Er alt korrekt? Skriv ut søknaden!",
                                       "text":
-                                        "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende inn sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i SAK10 § 10-1 første ledd.</strong></p>"
+                                        "<p>Da kan du skrive ut søknaden, signere den, og sende den til din kommune. Hvis søknaden blir godkjent, vil du motta et vedtaksbrev fra kommunen som du kan sende inn sammen med gjennomføringsplanen.</p><p><strong>Husk at firmaet ditt kan bli stilt til ansvar for det som er beskrevet i denne søknaden! Firmaet må også ha rutiner for kvalitetssikring slik det står i <a href=\"https://dibk.no/byggeregler/sak/3/10/10-1\"/>SAK10 § 10-1 første ledd</a>.</strong></p>"
                                     }
                                   ]
                                 }
