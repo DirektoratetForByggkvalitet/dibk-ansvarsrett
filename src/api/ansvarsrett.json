@@ -1674,10 +1674,34 @@
           ]
         },
         {
-          "id": "competence.additional",
-          "property": "competence.additional",
-          "type": "Textarea",
-          "heading": "Beskriv hvilken utdannelse eventuelt kurs som er relevante og hvilken relevant erfaring du har"
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "type": "and",
+                "clauses": [
+                  {
+                    "field": "class",
+                    "operator": "eq",
+                    "value": "tiltaksklasse1"
+                  },
+                  {
+                    "field": "function",
+                    "operator": "neq",
+                    "value": "krp"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "id": "competence.additional",
+                  "property": "competence.additional",
+                  "type": "Textarea",
+                  "heading": "Beskriv hvilken utdannelse eventuelt kurs som er relevante og hvilken relevant erfaring du har"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
