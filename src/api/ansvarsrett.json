@@ -1645,14 +1645,14 @@
                                   "id": "failedButCanGoOn",
                                   "type": "Text",
                                   "text":
-                                    "<p>Firmaet ditt mangler formell kompetanse til å erklære ansvar. Vi hjelper deg å fylle ut en søknad til kommunen, slik at dere likevel kan få tillatelse til å gjøre jobben.</p>"
+                                    "<p>Firmaet ditt mangler formell kompetanse til å erklære ansvar. Vi kan hjelpe deg å fylle ut en søknad til kommunen om å likevel få tillatelse til å gjøre jobben.</p>"
                                 },
                                 {
                                   "id": "competence.additional",
                                   "property": "competence.additional",
                                   "type": "Textarea",
                                   "heading":
-                                    "Beskriv hvilken erfaring, utdanning og/eller kurs firmaet ditt har som er relevant for prosjektet",
+                                    "Beskriv relevant kompetanse og erfaring til firmaet. Dette kan for eksempel være kurs, etterutdanning eller lignende prosjekter.",
                                   "text":
                                     "<p>Kommunen vil ta dette i betraktning når de behandler søknaden din.</p>"
                                 }
