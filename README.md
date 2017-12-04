@@ -32,7 +32,9 @@ Then you are ready to type `yarn deploy` :sparkles:
 ## Deploy to production
 
 First build this project `npm run build` (make sure you are using latest version of [losen](https://github.com/netliferesearch/losen)).  
-Then navigate to the wizard page in [DIBK staging](http://azr-dibkstaging.azurewebsites.net/). You will find the page in the icon top left and `Forside/Tests/Veiviser 1`
+Then navigate to the wizard page in [DIBK staging](https://azr-dibkstaging.azurewebsites.net/).
+Could not login from the last page so you could try and go to https://azr-dibkstaging.azurewebsites.net/tests/veiviser-1/.
+You will find the page in the icon top left and `Forside/Tests/Veiviser 1`
 Select folder icon (folder top right) then press "Media" (between "Blokker" and "Skjemaer").
 Scroll all the way to the bottom and chose "For denne Side".
 Upload the Javascript bundle found in `build/static` after the build step.
