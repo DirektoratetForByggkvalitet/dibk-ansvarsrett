@@ -20,7 +20,7 @@ function Intro({ close, data }) {
           sende til ansvarlig søker.
         </Primitives.Paragraphs.P>
         <Primitives.Paragraphs.P>
-          Du får kun velge ett ansvarsområde med én tiltalsklasse og én funksjon for hver gang du
+          Du får kun velge ett ansvarsområde med én tiltaksklasse og én funksjon for hver gang du
           gjennomfører denne veiviseren.
         </Primitives.Paragraphs.P>
         <section>
