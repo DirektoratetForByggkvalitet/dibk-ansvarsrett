@@ -222,7 +222,7 @@
               "property": "competence.experience",
               "type": "Number",
               "text":
-                "<p>Arbeidserfaringen må være opparbeidet etter endt relevant utdanning.</p><p>Er oppgaven i tiltaksklasse 1 eller 2 oppgir du arbeidserfaring fra siste 10 år, for tiltaksklasse 3 oppgir du fra siste 15 år.</p><p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften.</p>",
+                "<p>Arbeidserfaringen må være opparbeidet etter endt relevant utdanning, og være relevant for oppgaven firmaet skal utføre.</p><p>Er oppgaven i tiltaksklasse 1 eller 2 oppgir du arbeidserfaring fra siste 10 år, for tiltaksklasse 3 oppgir du fra siste 15 år.</p><p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften.</p>",
               "heading": "Velg antall år med relevant arbeidserfaring til faglig ledelse",
               "minimum": 0
             },
@@ -340,19 +340,39 @@
                   {
                     "id": "possibleRoles.table.1+projecting",
                     "type": "Cell",
-                    "text": "Bachelor i ingeniørfag eller høgskolegrad + 6 års erfaring fra 10 siste år",
+                    "text": "Høyere fagskolegrad + 10 års erfaring fra 10 siste år<br/><br/><em>eller</em><br/><br/>Bachelor i ingeniørfag eller høgskolegrad + 6 års erfaring fra 10 siste år",
                     "test": {
-                      "type": "and",
+                      "type": "or",
                       "clauses": [
                         {
-                          "field": "competence.education",
-                          "operator": "gte",
-                          "value": 4
+                          "type": "and",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "gte",
+                              "value": 3
+                            },
+                            {
+                              "field": "competence.experience",
+                              "operator": "gte",
+                              "value": 10
+                            }
+                          ]
                         },
                         {
-                          "field": "competence.experience",
-                          "operator": "gte",
-                          "value": 6
+                          "type": "and",
+                          "clauses": [
+                            {
+                              "field": "competence.education",
+                              "operator": "gte",
+                              "value": 4
+                            },
+                            {
+                              "field": "competence.experience",
+                              "operator": "gte",
+                              "value": 6
+                            }
+                          ]
                         }
                       ]
                     }
@@ -520,7 +540,7 @@
           "id": "class",
           "property": "class",
           "type": "Radio",
-          "heading": "Hvilken tiltaksklasse er jobben?",
+          "heading": "I hvilken tiltaksklasse er jobben?",
           "text":
             "<p>Snakk med ansvarlig søker hvis du er i tvil om hvilken tiltaksklasse arbeidene du skal gjøre er. <a href=\"https://dibk.no/byggeregler/sak/3/9/9-4/\">Les mer om tiltaksklasser i byggesaksforskriften.</a></p>",
           "options": [
@@ -562,8 +582,7 @@
                     "clauses": [
                       {
                         "field": "competence.education",
-                        "operator": "gte",
-                        "value": 1
+                        "operator": "required"
                       },
                       {
                         "field": "competence.experience",
@@ -839,14 +858,39 @@
                             "value": "tiltaksklasse2"
                           },
                           {
-                            "field": "competence.education",
-                            "operator": "gte",
-                            "value": 4
-                          },
-                          {
-                            "field": "competence.experience",
-                            "operator": "gte",
-                            "value": 6
+                            "type": "or",
+                            "clauses": [
+                              {
+                                "type": "and",
+                                "clauses": [
+                                  {
+                                    "field": "competence.education",
+                                    "operator": "gte",
+                                    "value": 3
+                                  },
+                                  {
+                                    "field": "competence.experience",
+                                    "operator": "gte",
+                                    "value": 10
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "and",
+                                "clauses": [
+                                  {
+                                    "field": "competence.education",
+                                    "operator": "gte",
+                                    "value": 4
+                                  },
+                                  {
+                                    "field": "competence.experience",
+                                    "operator": "gte",
+                                    "value": 6
+                                  }
+                                ]
+                              }
+                            ]
                           }
                         ]
                       },
