@@ -155,13 +155,14 @@
       "type": "Page",
       "heading": "Har firmaet riktig kompetanse til å erklære ansvar?",
       "lead":
-        "<p>For å kunne erklære ansvarsrett, må firmaet ha en faglig ledelse med tilstrekkelig relevant utdanning og relevant erfaring. Den faglige ledelsen skal delta i prosjektet som ansvarsretten gjelder, ha innflytelse over beslutninger i prosjektet og sikre at kravene i plan- og bygningsloven blir ivaretatt. Den faglige ledelsen kan være innleid i prosjektet.</p>",
+        "<p>Firmaet må ha en faglig ledelse med tilstrekkelig relevant utdanning og relevant erfaring. Den faglige ledelsen må delta i prosjektet som ansvarsretten gjelder, skal ha innflytelse over beslutninger i prosjektet og sikre at kravene i plan- og bygningsloven blir ivaretatt. Den faglige ledelsen kan være innleid i prosjektet.</p>",
       "children": [
         {
           "id": "competence",
           "type": "Group",
           "simple": true,
           "heading": "Hvilken relevant utdanning og relevant erfaring har den faglige ledelsen?",
+          "text": "Du må selv vurdere om den konkret utdanningen og arbeidserfaringen til faglig ledelse er relevant for oppgaven som firmaet skal utføre.",
           "property": "competence",
           "children": [
             {
@@ -171,7 +172,7 @@
               "heading": "Velg relevant utdanning til faglig ledelse",
               "defaultOption": "Velg utdanningsnivå",
               "text":
-                "<p>Utdanningen må være relevant for oppgavene firmaet skal erklære ansvar for. <a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften.</p>",
+                "<p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-2/ \">Les mer om utdanningsnivåer</a> i byggesaksforskriften.</p>",
               "options": [
                 {
                   "id": "competence.education.none",
@@ -222,7 +223,7 @@
               "property": "competence.experience",
               "type": "Number",
               "text":
-                "<p>Arbeidserfaringen må være opparbeidet etter endt relevant utdanning, og være relevant for oppgaven firmaet skal utføre.</p><p>Er oppgaven i tiltaksklasse 1 eller 2 oppgir du arbeidserfaring fra siste 10 år, for tiltaksklasse 3 oppgir du fra siste 15 år.</p><p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften.</p>",
+                "<p>Arbeidserfaringen må være opparbeidet etter endt relevant utdanning. I tiltaksklasse 1 eller 2 oppgir du arbeidserfaring fra siste 10 år, for tiltaksklasse 3 oppgir du fra siste 15 år.</p><p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften.</p>",
               "heading": "Velg antall år med relevant arbeidserfaring til faglig ledelse",
               "minimum": 0
             },
@@ -1611,7 +1612,7 @@
       "type": "Page",
       "heading": "Hva skal firmaet ta ansvar for?",
       "lead":
-        "Pass på at du ikke beskriver arbeidet som mer omfattende enn det du faktsk skal gjøre. Det er viktig å avgrense det mot andre ansvarsområder slik at du ikke blir stilt til ansvar for noe noen andre har gjort. ",
+        "Beskriv det du skal gjøre så nøyaktig og presist som mulig. Dette er viktig for å unngå å ende opp med ansvar for byggearbeider som andre foretak skulle tatt ansvar for.",
       "children": [
         {
           "id": "responsibility.description",
@@ -1701,7 +1702,7 @@
               "type": "Page",
               "heading": "Når regner du med å sende samsvarserklæring?",
               "lead":
-                "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i regelverket</a><p>",
+                "<p>Når du har gjort jobben, må du erklære at arbeidet er forskriftsmessig utført ved å sende en Samsvarserklæring til ansvarlig søker.</p><p>Det er vanlig å gjøre dette når du er helt ferdig, men du kan også lage flere erklæringer underveis. Dette må du gjøre om arbeidet ditt skal være ferdig ved søknad om igangsettingstillatelse, midlertidig brukstillatelse eller når det skal søkes om ferdigattest.</p><p>Det viktige er at du ikke krysser av for at du er ferdig med arbeidet før du faktisk er det!</p><p><a href=\"https://dibk.no/byggeregler/sak/1/1/1-2/?_t_id=icu3BVXVvaK3ddH6i8JK6Q%3d%3d&_t_q=samsvarserkl%C3%A6ring&_t_tags=language%3ano%2csiteid%3aa8fed669-6208-4354-8fe6-9c93cb91a133&_t_ip=195.159.248.98%3a59714&_t_hit.id=EPiServer_Templates_DIBK_PageTypes_Veiledninger_ParagrafPageType/_a0b64d87-7db5-42f9-a6cb-238f9d1daebc_no&_t_hit.pos=1\">Les mer om samsvarserklæring i SAK10 § 1-2</a><p>",
               "children": [
                 {
                   "id": "conformity.type",
@@ -1820,39 +1821,49 @@
       "type": "Page",
       "heading": "Informasjon om byggeplassen",
       "lead":
-        "Du må fylle ut denne informasjonen slik at det blir enkelt å knytte erklæringen til riktig byggesak.",
+        "Dette gjør det enklere å knytte erklæringen til riktig byggesak.",
       "children": [
         {
           "id": "where",
           "type": "Group",
           "simple": true,
           "heading": "Hvor skal arbeidet gjøres?",
+          "text": "Fyll ut de feltene som finnes for eiendommen",
           "property": "where",
           "children": [
             {
               "id": "where.municipality",
               "property": "where.municipality",
               "type": "Input",
-              "heading": "Kommune"
+              "heading": "Navn på kommune"
             },
             {
               "id": "where.section",
               "property": "where.section",
-              "type": "Input",
-              "heading": "Gårdsnummer"
+              "type": "Number",
+              "heading": "Gårdsnummer",  
+              "minimum": 0
             },
             {
               "id": "where.number",
               "property": "where.number",
-              "type": "Input",
-              "heading": "Bruksnummer"
+              "type": "Number",
+              "heading": "Bruksnummer",
+              "minimum": 0
+            },
+            {
+              "id": "where.seksjonsnummer",
+              "property": "where.seksjonsnummer",
+              "type": "Number",
+              "heading": "Seksjonsnummer",
+              "minimum": 0,
+              "optional": true
             },
             {
               "id": "where.address",
               "property": "where.address",
               "type": "Input",
               "heading": "Gateadresse",
-              "text": "<p>Fylles ut hvis eiendommen har gateadresse</p>",
               "optional": true
             }
           ]
